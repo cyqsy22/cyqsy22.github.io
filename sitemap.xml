@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyuqian1.github.io/about/index.html</loc>
+    
+    <lastmod>2022-02-27T09:04:24.698Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://caoyuqian1.github.io/tags/index.html</loc>
     
     <lastmod>2022-02-27T06:59:21.491Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://caoyuqian1.github.io/photography/index.html</loc>
     
     <lastmod>2022-02-27T06:59:21.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://caoyuqian1.github.io/about/index.html</loc>
-    
-    <lastmod>2022-02-27T06:59:21.395Z</lastmod>
     
   </url>
   
@@ -37,7 +37,7 @@
   </url>
   
   <url>
-    <loc>https://caoyuqian1.github.io/2019/11/01/Hexo-Theme-Snail/</loc>
+    <loc>https://caoyuqian1.github.io/2019/11/01/2019-11-01-Hexo-Theme-Snail/</loc>
     
     <lastmod>2022-02-27T06:59:21.383Z</lastmod>
     
