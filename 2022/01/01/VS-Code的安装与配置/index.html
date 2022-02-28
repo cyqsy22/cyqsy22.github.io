@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          如何快速搭建一个blog - caoyuqian&#39;s blog
+          VS Code的安装与配置 - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/01/17/如何搭建一个blog/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/01/01/VS-Code的安装与配置/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,22 +112,20 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
-                            
-                              <a class="tag" href="/tags/#搭建教程" title="搭建教程">搭建教程</a>
+                              <a class="tag" href="/tags/#-Visual Studio Code -安装与配置 -教程" title="-Visual Studio Code -安装与配置 -教程">-Visual Studio Code -安装与配置 -教程</a>
                             
                         </div>
-                        <h1>如何快速搭建一个blog</h1>
+                        <h1>VS Code的安装与配置</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
-                            2022-01-17
+                            2022-01-01
                         </span>
 
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">601</span> and
+                                Words <span class="post-count">531</span> and
                                 Reading Time <span class="post-count">2</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -276,37 +274,57 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="安装node-js、git、hexo"><a href="#安装node-js、git、hexo" class="headerlink" title="安装node.js、git、hexo"></a>安装node.js、git、hexo</h2><h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js (nodejs.org)</a></p>
-<h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git (git-scm.com)</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
-<h3 id="全局安装gexo"><a href="#全局安装gexo" class="headerlink" title="全局安装gexo"></a>全局安装gexo</h3><p>随便打开一个文件夹，打开gitbash运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo -v  &#x2F;&#x2F;查看是否安装成功</span><br></pre></td></tr></table></figure>
-<h2 id="搭建GitHub仓库"><a href="#搭建GitHub仓库" class="headerlink" title="搭建GitHub仓库"></a>搭建GitHub仓库</h2><p>新建仓库-Repository name：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">github name.github.io &#x2F;&#x2F;例如caoyuqian1.github.io</span><br><span class="line">Add a README file &#x2F;&#x2F;勾选此项</span><br><span class="line">README.md文件 &#x2F;&#x2F;创建成功后仓库出现</span><br></pre></td></tr></table></figure>
-<h2 id="生成ssh-keys"><a href="#生成ssh-keys" class="headerlink" title="生成ssh keys"></a>生成ssh keys</h2><h3 id="检查ssh"><a href="#检查ssh" class="headerlink" title="检查ssh"></a>检查ssh</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh &#x2F;&#x2F;gitbash自带ssh，检查ssh（随便打开文件夹右键git bash）</span><br></pre></td></tr></table></figure>
-<h3 id="生成ssh-keys-1"><a href="#生成ssh-keys-1" class="headerlink" title="生成ssh keys"></a>生成ssh keys</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C&quot;github注册邮箱地址&quot;  &#x2F;&#x2F;生成ssh，四次回车</span><br></pre></td></tr></table></figure>
-<h3 id="将ssh-keys添加至github"><a href="#将ssh-keys添加至github" class="headerlink" title="将ssh keys添加至github"></a>将ssh keys添加至github</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">进入C:\Users\windows用户名\.ssh，打开id_rsa.pud，复制内容</span><br><span class="line">打开Github-Settings-SSH and GPG Keys-SSH Keys-新建 名字随便 内容粘贴</span><br></pre></td></tr></table></figure>
-<h3 id="测试ssh是否绑定成功"><a href="#测试ssh是否绑定成功" class="headerlink" title="测试ssh是否绑定成功"></a>测试ssh是否绑定成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line">输入yes</span><br></pre></td></tr></table></figure>
-<p>显示Hi，用户名，you’ve successfully…</p>
-<h3 id="使当前电脑的git与你的github相连"><a href="#使当前电脑的git与你的github相连" class="headerlink" title="使当前电脑的git与你的github相连"></a>使当前电脑的git与你的github相连</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global &quot;用户名&quot;</span><br><span class="line">git config --global &quot;邮箱&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="建立blog文件夹"><a href="#建立blog文件夹" class="headerlink" title="建立blog文件夹"></a>建立blog文件夹</h2><h3 id="新建博客文件"><a href="#新建博客文件" class="headerlink" title="新建博客文件"></a>新建博客文件</h3><p>在电脑上创建一个博客文件夹，使用<code>$ hexo init</code>生成文件</p>
-<h3 id="修改参数"><a href="#修改参数" class="headerlink" title="修改参数"></a>修改参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">C:\Blog\_config.yml &#x2F;&#x2F;打开文件</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment</span><br><span class="line">删除这两行下方的内容，并修改为：</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: 仓库网址</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-<h3 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server --save &#x2F;&#x2F;安装服务器启动工具</span><br><span class="line">$ npm install hexo-deployer-git --save &#x2F;&#x2F;安装自动部署工具</span><br></pre></td></tr></table></figure>
-<h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g &#x2F;&#x2F;生成静态文件</span><br><span class="line">$ hexo d &#x2F;&#x2F;部署到github</span><br><span class="line">$ hexo s &#x2F;&#x2F;启动服务器，生成http:&#x2F;&#x2F;localhost:4000，启动期间自动更新</span><br></pre></td></tr></table></figure>
-<h2 id="附录-基本命令"><a href="#附录-基本命令" class="headerlink" title="附录 基本命令"></a>附录 基本命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init [folder]&#x2F;$ hexo init</span><br></pre></td></tr></table></figure>
-<p>新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p>
-<p>例如，建立一个C:\Blog文件夹，输入命令hexo init将文件生成在Blog文件夹中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &lt;title&gt;&#x2F;</span><br></pre></td></tr></table></figure>
-<p>新建一篇文章。如果标题包含空格的话，请使用”引号”括起来。</p>
-<p>例如$ hexo new “post title with whitespace”，保存在C:\Blog\source\ _posts中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate&#x2F;$ hexo g</span><br></pre></td></tr></table></figure>
-<p>生成静态文件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server&#x2F;$ hexo s</span><br></pre></td></tr></table></figure>
-<p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy&#x2F;$ hexo d</span><br></pre></td></tr></table></figure>
-<p>部署网站。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
+                <h5 id="第一步-安装"><a href="#第一步-安装" class="headerlink" title="第一步 安装"></a>第一步 安装</h5><p>1.Visual Studio Code安装</p>
+<p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code - Code Editing. Redefined</a></p>
+<p>2.MinGW64 环境安装</p>
+<p><a href="https://sourceforge.net/projects/mingw-w64/files/" target="_blank" rel="noopener">MinGW-w64 - for 32 and 64 bit Windows - Browse Files at SourceForge.net</a></p>
+<p>C:/MinGW64 下文以该路径为例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:&#x2F;MinGW64&#x2F;bin(含有g++.exe的目录)</span><br><span class="line">C:&#x2F;MinGW64&#x2F;lib &#x2F;&#x2F;两个关键目录</span><br></pre></td></tr></table></figure>
+<h5 id="第二步-配置环境变量"><a href="#第二步-配置环境变量" class="headerlink" title="第二步 配置环境变量"></a>第二步 配置环境变量</h5><p> 1.添加环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将C:&#x2F;MinGW64&#x2F;bin添加到环境变量 &#x2F;&#x2F;用户变量只对当前登入系统的用户有效，系统变量对所有用户生效</span><br></pre></td></tr></table></figure>
+<p>2.检验</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1）Win+R打开运行-输入cmd或powershell 回车，在命令行中输入g++ -v,弹出gcc的版本号。</span><br></pre></td></tr></table></figure>
+<p>注意版本号要与你下载的一致，如果不一致，说明环境变量Path里原本有老版本的编译器，可能是安装其他编译器带上的，最好去掉。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2）在命令行输入gcc弹出no input files</span><br></pre></td></tr></table></figure>
+<p>如果弹出“不是内部命令或外部命令”，说明gcc在的文件夹没有在Path中，要加进去才行</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/gcc.png" class="">
+<h5 id="第三步-扩展安装"><a href="#第三步-扩展安装" class="headerlink" title="第三步 扩展安装"></a>第三步 扩展安装</h5><p>必选：</p>
+<ul>
+<li>C/C++</li>
+<li>Code     Runner：右键即可编译运行单文件</li>
+<li>Chinese     (Simplified) Language Pack 中文</li>
+</ul>
+<p>其他可选：</p>
+<ul>
+<li>Bracket Pair     Colorizer 2：彩虹花括号</li>
+<li><p>One Dark Pro：VS     Code安装量最高的主题</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/C.png" class="">
+</li>
+</ul>
+<h5 id="第四步-对扩展进行配置"><a href="#第四步-对扩展进行配置" class="headerlink" title="第四步 对扩展进行配置"></a>第四步 对扩展进行配置</h5> <img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/peizhi.png" class="">
+<p>1.code runner</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/code.png" class="">
+<p>2.c/c++</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp.png" class="">
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp1.png" class="">
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp2.png" class="">
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp3.png" class="">
+<h5 id="第五步-创建文件工作区"><a href="#第五步-创建文件工作区" class="headerlink" title="第五步 创建文件工作区"></a>第五步 创建文件工作区</h5><p>1.在C盘中创建一个工作区,以C:/V-S-CODE-C为例。选择 文件-打开文件夹</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/gzq.png" class="">
+<p>2.然后在工作区中新建文件，例如输入test.c，然后开始输代码，最好不要出现中文，因为会变成一段乱码。</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/xj.png" class="">
+<p>3.运行与调试</p>
+<p>输入代码后，点击右上角运行，在终端中就会显示运行结果</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/ts.png" class="">
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/zd.png" class="">
+<p>点击左侧的运行与调试栏，并点击开始调试，选择环境-C++(GDB/LLDB),选择配置-g++.exe-生成和调试活动文件，完成后会自动生成两个文件</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/yx.png" class="">
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hj.png" class="">
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hjxz.png" class="">
+<p>完成后，生成文件夹和launch.json,tasks.json文件</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/sc.png" class="">
+<p>在调试代码时，将鼠标移到数字左侧可以选择断点</p>
+<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/dd.png" class="">
 
                 
                 <hr>
@@ -314,13 +332,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2022/01/18/如何解决一些常见问题/" data-toggle="tooltip" data-placement="top" title="如何解决一些常见问题">&larr; Previous Post</a>
+                        <a href="/2022/01/17/如何搭建一个blog/" data-toggle="tooltip" data-placement="top" title="如何快速搭建一个blog">&larr; Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/2022/01/01/VS-Code的安装与配置/" data-toggle="tooltip" data-placement="top" title="VS Code的安装与配置">Next Post &rarr;</a>
-                    </li>
                     
                 </ul>
 
@@ -432,7 +446,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#安装node-js、git、hexo"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">安装node.js、git、hexo</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#node-js安装"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">node.js安装</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#git安装"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">git安装</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#全局安装gexo"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">全局安装gexo</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#搭建GitHub仓库"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">搭建GitHub仓库</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#生成ssh-keys"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">生成ssh keys</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#检查ssh"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">检查ssh</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#生成ssh-keys-1"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">生成ssh keys</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#将ssh-keys添加至github"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">将ssh keys添加至github</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#测试ssh是否绑定成功"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">测试ssh是否绑定成功</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#使当前电脑的git与你的github相连"><span class="toc-nav-number">3.5.</span> <span class="toc-nav-text">使当前电脑的git与你的github相连</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#建立blog文件夹"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">建立blog文件夹</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#新建博客文件"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">新建博客文件</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#修改参数"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">修改参数</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#安装工具"><span class="toc-nav-number">4.3.</span> <span class="toc-nav-text">安装工具</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#上传"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">上传</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#附录-基本命令"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">附录 基本命令</span></a></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第一步-安装"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">第一步 安装</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第二步-配置环境变量"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">第二步 配置环境变量</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第三步-扩展安装"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">第三步 扩展安装</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第四步-对扩展进行配置"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">第四步 对扩展进行配置</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第五步-创建文件工作区"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">第五步 创建文件工作区</span></a></li></ol>
             
           
           </div>
@@ -454,9 +468,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
-                        
-                          <a class="tag" href="/tags/#搭建教程" title="搭建教程">搭建教程</a>
+                          <a class="tag" href="/tags/#-Visual Studio Code -安装与配置 -教程" title="-Visual Studio Code -安装与配置 -教程">-Visual Studio Code -安装与配置 -教程</a>
                         
                     </div>
                 </section>
