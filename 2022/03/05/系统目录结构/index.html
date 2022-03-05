@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          linux安装 - caoyuqian&#39;s blog
+          系统目录结构 - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/02/28/linux的安装与配置/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/03/05/系统目录结构/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,22 +112,20 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#安装" title="安装">安装</a>
-                            
-                              <a class="tag" href="/tags/#linux" title="linux">linux</a>
+                              <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
                             
                         </div>
-                        <h1>linux安装</h1>
+                        <h1>系统目录结构</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
-                            2022-02-28
+                            2022-03-05
                         </span>
 
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">67</span> and
+                                Words <span class="post-count">264</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -196,13 +194,6 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/categories/">Categories</a>
                         </li>
                         
@@ -210,7 +201,7 @@
 
                         
                         <li>
-                            <a href="/photography/">Photography</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -218,6 +209,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/photography/">Photography</a>
                         </li>
                         
                     
@@ -276,9 +274,20 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="VMWare-windows版安装"><a href="#VMWare-windows版安装" class="headerlink" title="VMWare windows版安装"></a>VMWare windows版安装</h1><p><a href="https://www.vmware.com/go/getworkstation-win" target="_blank" rel="noopener">https://www.vmware.com/go/getworkstation-win</a><br>激活密钥网上搜</p>
-<h1 id="Linux镜像下载"><a href="#Linux镜像下载" class="headerlink" title="Linux镜像下载"></a>Linux镜像下载</h1><h5 id="Centos"><a href="#Centos" class="headerlink" title="Centos"></a>Centos</h5><p><a href="https://www.centos.org/centos-linux/" target="_blank" rel="noopener">https://www.centos.org/centos-linux/</a><br>64位操作系统下载：amd64或x86-64，32位下载：i386选择任意国内镜像网站，下载后缀DVD.iso即可</p>
-<h5 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h5><p><a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener">https://ubuntu.com/download/desktop</a></p>
+                <img src="/2022/03/05/%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/1.png" class="">
+<h3 id="bin"><a href="#bin" class="headerlink" title="bin"></a>bin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">binaries(二进制文件)的缩写,存放最经常使用的命令</span><br></pre></td></tr></table></figure>
+<h3 id="dev"><a href="#dev" class="headerlink" title="dev"></a>dev</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">device(外接设备)的缩写,存放外接设备</span><br></pre></td></tr></table></figure>
+<h3 id="etc"><a href="#etc" class="headerlink" title="etc"></a>etc</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">etcetera(等等)的缩写,存放配置文件</span><br></pre></td></tr></table></figure>
+<h3 id="home"><a href="#home" class="headerlink" title="home"></a>home</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">除了root用户以外的其他用户的家目录,一般以用户的账号命名目录,如上图的alice、bob和eve,类似于windows下的windows&#x2F;user&#x2F;用户</span><br></pre></td></tr></table></figure>
+<h3 id="proc"><a href="#proc" class="headerlink" title="proc"></a>proc</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">processes(进程)的缩写</span><br></pre></td></tr></table></figure>
+<h3 id="root"><a href="#root" class="headerlink" title="root"></a>root</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">系统管理员(也称作超级权限者)的用户目录</span><br></pre></td></tr></table></figure>
+<h3 id="sbin"><a href="#sbin" class="headerlink" title="sbin"></a>sbin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">superuser binaries(超级用户的二进制文件)的缩写,存放系统管理员使用的系统管理程序</span><br></pre></td></tr></table></figure>
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="tmp"></a>tmp</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">temporary(临时的)的缩写,存放临时文件</span><br></pre></td></tr></table></figure>
+<h3 id="usr"><a href="#usr" class="headerlink" title="usr"></a>usr</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是unix shared resource(共享资源)的缩写,存放用户自己安装的程序,类似于windows下的program files</span><br></pre></td></tr></table></figure>
+<h3 id="var"><a href="#var" class="headerlink" title="var"></a>var</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">variable(变量),存放程序&#x2F;系统日志文件</span><br></pre></td></tr></table></figure>
+<h3 id="mnt"><a href="#mnt" class="headerlink" title="mnt"></a>mnt</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">外接设备挂载(分配盘符)到此文件</span><br></pre></td></tr></table></figure>
+<h3 id="boot"><a href="#boot" class="headerlink" title="boot"></a>boot</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">存放启动linux的核心文件，如一些镜像及连接文件</span><br></pre></td></tr></table></figure>
+<h3 id="run"><a href="#run" class="headerlink" title="run"></a>run</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是一个临时文件系统，存放系统启动以来的信息。重启时删除</span><br></pre></td></tr></table></figure>
 
                 
                 <hr>
@@ -286,12 +295,12 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2022/02/28/Mysql数据库安装/" data-toggle="tooltip" data-placement="top" title="Mysql安装">&larr; Previous Post</a>
+                        <a href="/2022/03/05/文件属性/" data-toggle="tooltip" data-placement="top" title="文件属性">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2022/01/18/如何解决一些常见问题/" data-toggle="tooltip" data-placement="top" title="如何解决一些常见问题">Next Post &rarr;</a>
+                        <a href="/2022/02/28/AutoCAD安装/" data-toggle="tooltip" data-placement="top" title="AutoCAD安装">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -404,7 +413,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#VMWare-windows版安装"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">VMWare windows版安装</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Linux镜像下载"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Linux镜像下载</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#Centos"><span class="toc-nav-number">2.0.0.0.1.</span> <span class="toc-nav-text">Centos</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#ubuntu"><span class="toc-nav-number">2.0.0.0.2.</span> <span class="toc-nav-text">ubuntu</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#bin"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">bin</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#dev"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">dev</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#etc"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">etc</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#home"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">home</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#proc"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">proc</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#root"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">root</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#sbin"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">sbin</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#tmp"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">tmp</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#usr"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">usr</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#var"><span class="toc-nav-number">10.</span> <span class="toc-nav-text">var</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#mnt"><span class="toc-nav-number">11.</span> <span class="toc-nav-text">mnt</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#boot"><span class="toc-nav-number">12.</span> <span class="toc-nav-text">boot</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#run"><span class="toc-nav-number">13.</span> <span class="toc-nav-text">run</span></a></li></ol>
             
           
           </div>
@@ -426,9 +435,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#安装" title="安装">安装</a>
-                        
-                          <a class="tag" href="/tags/#linux" title="linux">linux</a>
+                          <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
                         
                     </div>
                 </section>

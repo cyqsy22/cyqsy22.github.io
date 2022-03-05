@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          MySQL安装 - caoyuqian&#39;s blog
+          文件属性 - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/02/28/Mysql数据库安装/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/03/05/文件属性/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,22 +112,20 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#MySQL" title="MySQL">MySQL</a>
-                            
-                              <a class="tag" href="/tags/#安装" title="安装">安装</a>
+                              <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
                             
                         </div>
-                        <h1>MySQL安装</h1>
+                        <h1>文件属性</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
-                            2022-02-28
+                            2022-03-05
                         </span>
 
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">26</span> and
+                                Words <span class="post-count">199</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -276,21 +274,22 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="MySQL下载"><a href="#MySQL下载" class="headerlink" title="MySQL下载"></a>MySQL下载</h1><p><a href="https://dev.mysql.com/downloads/installer/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/installer/</a></p>
-<h1 id="Microsoft-Visual-C-Redistributable2019"><a href="#Microsoft-Visual-C-Redistributable2019" class="headerlink" title="Microsoft Visual C++ Redistributable2019"></a>Microsoft Visual C++ Redistributable2019</h1><p><a href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="_blank" rel="noopener">https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170</a></p>
+                <img src="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/1.jpg" class="">
+<img src="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/2.png" class="">
+<h1 id="第一个字符-第0位-的含义"><a href="#第一个字符-第0位-的含义" class="headerlink" title="第一个字符(第0位)的含义"></a>第一个字符(第0位)的含义</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">d 表示目录</span><br><span class="line">- 表示文件</span><br><span class="line">l 表示连接文档(link file)</span><br><span class="line">b 表示装置文件中的可供存储的接口设备(可随机存储装置)</span><br><span class="line">c 装置文件里的串行设备，如键盘、鼠标(一次性读取装置)</span><br><span class="line">&#x2F;&#x2F;第0位确定文件类型</span><br></pre></td></tr></table></figure>
+<h1 id="rwx参数含义"><a href="#rwx参数含义" class="headerlink" title="rwx参数含义"></a>rwx参数含义</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">r (read)可读</span><br><span class="line">w (write)可写</span><br><span class="line">x (execute)可执行</span><br><span class="line">&#x2F;&#x2F;确定用户对文件的权限。这三个权限的位置不会改变，如果没有权限，用-代替</span><br></pre></td></tr></table></figure>
+<p>第1-3位 确定<code>属主(该文件所有者)</code>对该文件的权限</p>
+<p>第4-6位 确定<code>属组(所有者的同组用户)</code>对该文件的权限</p>
+<p>第7-9位 确定<code>其他用户</code>对该文件的权限</p>
 
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2022/02/28/AutoCAD安装/" data-toggle="tooltip" data-placement="top" title="AutoCAD安装">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2022/02/28/linux安装/" data-toggle="tooltip" data-placement="top" title="Linux安装">Next Post &rarr;</a>
+                        <a href="/2022/03/05/系统目录结构/" data-toggle="tooltip" data-placement="top" title="系统目录结构">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -403,7 +402,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#MySQL下载"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">MySQL下载</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Microsoft-Visual-C-Redistributable2019"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Microsoft Visual C++ Redistributable2019</span></a></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#第一个字符-第0位-的含义"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">第一个字符(第0位)的含义</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#rwx参数含义"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">rwx参数含义</span></a></li></ol>
             
           
           </div>
@@ -425,9 +424,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#MySQL" title="MySQL">MySQL</a>
-                        
-                          <a class="tag" href="/tags/#安装" title="安装">安装</a>
+                          <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
                         
                     </div>
                 </section>
