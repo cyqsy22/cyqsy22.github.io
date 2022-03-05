@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>常用的目录管理指令</title>
+      <link href="/2022/03/05/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86%E6%8C%87%E4%BB%A4/"/>
+      <url>/2022/03/05/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86%E6%8C%87%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">绝对路径 由根目录&#x2F;写起，如$ cd &#x2F;home&#x2F;fishyoung、$ cd &#x2F;bin</span><br><span class="line">相对路径 从当前目录写起，如$ cd fishyoung,cd .&#x2F;fishyoung当前目录下，cd ..&#x2F;上一级目录下</span><br></pre></td></tr></table></figure><h1 id="ls-list-file"><a href="#ls-list-file" class="headerlink" title="ls(list file)"></a>ls(list file)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls 列出当前目录下的所有子目录和文件</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -a 列出当前目录下的所有文件，包含隐藏文件(.开头)</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l 以长数据串形式列出(详细信息)</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -la 列出全部文件(包括隐藏文件)的详细信息</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lh 以可读性较高的形式列出文件的详细信息</span><br></pre></td></tr></table></figure><h1 id="cd-change-directory"><a href="#cd-change-directory" class="headerlink" title="cd(change directory)"></a>cd(change directory)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]# cd &#x2F;home&#x2F;fishyoung 使用绝对路径切换到fishyoung目录</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost home]# cd .&#x2F;fishyoung 使用相对目录切换到fishyoung目录</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost fishyoung]# cd ~切换到当前用户的家目录</span><br><span class="line">&#x2F;&#x2F; 结果[root@localhost]#</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost home]# cd ..返回上一级目录</span><br></pre></td></tr></table></figure><h1 id="pwd-print-working-directory"><a href="#pwd-print-working-directory" class="headerlink" title="pwd(print working directory)"></a>pwd(print working directory)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd 显示目前所在的目录</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 常用指令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文件属性</title>
       <link href="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/"/>
       <url>/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/</url>
       
-        <content type="html"><![CDATA[<img src="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/1.jpg" class=""><img src="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/2.png" class=""><h1 id="第一个字符-第0位-的含义"><a href="#第一个字符-第0位-的含义" class="headerlink" title="第一个字符(第0位)的含义"></a>第一个字符(第0位)的含义</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">d 表示目录</span><br><span class="line">- 表示文件</span><br><span class="line">l 表示连接文档(link file)</span><br><span class="line">b 表示装置文件中的可供存储的接口设备(可随机存储装置)</span><br><span class="line">c 装置文件里的串行设备，如键盘、鼠标(一次性读取装置)</span><br><span class="line">&#x2F;&#x2F;第0位确定文件类型</span><br></pre></td></tr></table></figure><h1 id="rwx参数含义"><a href="#rwx参数含义" class="headerlink" title="rwx参数含义"></a>rwx参数含义</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">r (read)可读</span><br><span class="line">w (write)可写</span><br><span class="line">x (execute)可执行</span><br><span class="line">&#x2F;&#x2F;确定用户对文件的权限。这三个权限的位置不会改变，如果没有权限，用-代替</span><br></pre></td></tr></table></figure><p>第1-3位 确定<code>属主(该文件所有者)</code>对该文件的权限</p><p>第4-6位 确定<code>属组(所有者的同组用户)</code>对该文件的权限</p><p>第7-9位 确定<code>其他用户</code>对该文件的权限</p>]]></content>
+        <content type="html"><![CDATA[<img src="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/1.jpg" class=""><img src="/2022/03/05/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/2.png" class=""><h3 id="第一个字符-第0位-的含义"><a href="#第一个字符-第0位-的含义" class="headerlink" title="第一个字符(第0位)的含义"></a>第一个字符(第0位)的含义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">d 表示目录</span><br><span class="line">- 表示文件</span><br><span class="line">l 表示连接文档(link file)</span><br><span class="line">b 表示装置文件中的可供存储的接口设备(可随机存储装置)</span><br><span class="line">c 装置文件里的串行设备，如键盘、鼠标(一次性读取装置)</span><br><span class="line">&#x2F;&#x2F;第0位确定文件类型</span><br></pre></td></tr></table></figure><h3 id="rwx参数含义"><a href="#rwx参数含义" class="headerlink" title="rwx参数含义"></a>rwx参数含义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">r (read)可读</span><br><span class="line">w (write)可写</span><br><span class="line">x (execute)可执行</span><br><span class="line">&#x2F;&#x2F;确定用户对文件的权限。这三个权限的位置不会改变，如果没有权限，用-代替</span><br></pre></td></tr></table></figure><p>第1-3位 确定<code>属主(该文件所有者)</code>对该文件的权限</p><p>第4-6位 确定<code>属组(所有者的同组用户)</code>对该文件的权限</p><p>第7-9位 确定<code>其他用户</code>对该文件的权限</p>]]></content>
       
       
       <categories>
@@ -70,9 +97,9 @@
       
         <tags>
             
-            <tag> 安装 </tag>
-            
             <tag> AutoCAD </tag>
+            
+            <tag> 安装 </tag>
             
         </tags>
       
@@ -97,9 +124,9 @@
       
         <tags>
             
-            <tag> MySQL </tag>
-            
             <tag> 安装 </tag>
+            
+            <tag> MySQL </tag>
             
         </tags>
       
