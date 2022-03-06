@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          VS Code的安装与配置 - caoyuqian&#39;s blog
+          vim - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/01/01/VS-Code的安装与配置/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/03/06/vim/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,25 +112,21 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Visual Studio Code" title="Visual Studio Code">Visual Studio Code</a>
-                            
-                              <a class="tag" href="/tags/#安装与配置" title="安装与配置">安装与配置</a>
-                            
-                              <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                              <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
                             
                         </div>
-                        <h1>VS Code的安装与配置</h1>
+                        <h1>vim</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
-                            2022-01-01
+                            2022-03-06
                         </span>
 
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">531</span> and
-                                Reading Time <span class="post-count">2</span> Minutes
+                                Words <span class="post-count">0</span> and
+                                Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
                             <!-- 不蒜子统计 start -->
@@ -278,67 +274,16 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h5 id="第一步-安装"><a href="#第一步-安装" class="headerlink" title="第一步 安装"></a>第一步 安装</h5><p>1.Visual Studio Code安装</p>
-<p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code - Code Editing. Redefined</a></p>
-<p>2.MinGW64 环境安装</p>
-<p><a href="https://sourceforge.net/projects/mingw-w64/files/" target="_blank" rel="noopener">MinGW-w64 - for 32 and 64 bit Windows - Browse Files at SourceForge.net</a></p>
-<p>C:/MinGW64 下文以该路径为例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:&#x2F;MinGW64&#x2F;bin(含有g++.exe的目录)</span><br><span class="line">C:&#x2F;MinGW64&#x2F;lib &#x2F;&#x2F;两个关键目录</span><br></pre></td></tr></table></figure>
-<h5 id="第二步-配置环境变量"><a href="#第二步-配置环境变量" class="headerlink" title="第二步 配置环境变量"></a>第二步 配置环境变量</h5><p> 1.添加环境变量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将C:&#x2F;MinGW64&#x2F;bin添加到环境变量 &#x2F;&#x2F;用户变量只对当前登入系统的用户有效，系统变量对所有用户生效</span><br></pre></td></tr></table></figure>
-<p>2.检验</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1）Win+R打开运行-输入cmd或powershell 回车，在命令行中输入g++ -v,弹出gcc的版本号。</span><br></pre></td></tr></table></figure>
-<p>注意版本号要与你下载的一致，如果不一致，说明环境变量Path里原本有老版本的编译器，可能是安装其他编译器带上的，最好去掉。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2）在命令行输入gcc弹出no input files</span><br></pre></td></tr></table></figure>
-<p>如果弹出“不是内部命令或外部命令”，说明gcc在的文件夹没有在Path中，要加进去才行</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/gcc.png" class="">
-<h5 id="第三步-扩展安装"><a href="#第三步-扩展安装" class="headerlink" title="第三步 扩展安装"></a>第三步 扩展安装</h5><p>必选：</p>
-<ul>
-<li>C/C++</li>
-<li>Code     Runner：右键即可编译运行单文件</li>
-<li>Chinese     (Simplified) Language Pack 中文</li>
-</ul>
-<p>其他可选：</p>
-<ul>
-<li>Bracket Pair     Colorizer 2：彩虹花括号</li>
-<li><p>One Dark Pro：VS     Code安装量最高的主题</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/C.png" class="">
-</li>
-</ul>
-<h5 id="第四步-对扩展进行配置"><a href="#第四步-对扩展进行配置" class="headerlink" title="第四步 对扩展进行配置"></a>第四步 对扩展进行配置</h5> <img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/peizhi.png" class="">
-<p>1.code runner</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/code.png" class="">
-<p>2.c/c++</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp.png" class="">
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp1.png" class="">
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp2.png" class="">
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/cpp3.png" class="">
-<h5 id="第五步-创建文件工作区"><a href="#第五步-创建文件工作区" class="headerlink" title="第五步 创建文件工作区"></a>第五步 创建文件工作区</h5><p>1.在C盘中创建一个工作区,以C:/V-S-CODE-C为例。选择 文件-打开文件夹</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/gzq.png" class="">
-<p>2.然后在工作区中新建文件，例如输入test.c，然后开始输代码，最好不要出现中文，因为会变成一段乱码。</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/xj.png" class="">
-<p>3.运行与调试</p>
-<p>输入代码后，点击右上角运行，在终端中就会显示运行结果</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/ts.png" class="">
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/zd.png" class="">
-<p>点击左侧的运行与调试栏，并点击开始调试，选择环境-C++(GDB/LLDB),选择配置-g++.exe-生成和调试活动文件，完成后会自动生成两个文件</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/yx.png" class="">
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hj.png" class="">
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hjxz.png" class="">
-<p>完成后，生成文件夹和launch.json,tasks.json文件</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/sc.png" class="">
-<p>在调试代码时，将鼠标移到数字左侧可以选择断点</p>
-<img src="/2022/01/01/VS-Code%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/dd.png" class="">
-
+                
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2022/01/17/如何搭建一个blog/" data-toggle="tooltip" data-placement="top" title="如何快速搭建一个blog">&larr; Previous Post</a>
-                    </li>
                     
+                    <li class="next">
+                        <a href="/2022/03/05/常用的目录管理指令/" data-toggle="tooltip" data-placement="top" title="常用指令">Next Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -445,17 +390,6 @@
 
     
       
-        <aside id="sidebar">
-          <div id="toc" class="toc-article">
-          <strong class="toc-title">Contents</strong>
-          
-            
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第一步-安装"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">第一步 安装</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第二步-配置环境变量"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">第二步 配置环境变量</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第三步-扩展安装"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">第三步 扩展安装</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第四步-对扩展进行配置"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">第四步 对扩展进行配置</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#第五步-创建文件工作区"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">第五步 创建文件工作区</span></a></li></ol>
-            
-          
-          </div>
-        </aside>
-      
     
 
                 
@@ -472,11 +406,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Visual Studio Code" title="Visual Studio Code">Visual Studio Code</a>
-                        
-                          <a class="tag" href="/tags/#安装与配置" title="安装与配置">安装与配置</a>
-                        
-                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                          <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
                         
                     </div>
                 </section>

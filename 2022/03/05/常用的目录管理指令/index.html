@@ -16,7 +16,7 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          常用的目录管理指令 - caoyuqian&#39;s blog
+          常用指令 - caoyuqian&#39;s blog
         
     </title>
 
@@ -117,7 +117,7 @@
                               <a class="tag" href="/tags/#常用指令" title="常用指令">常用指令</a>
                             
                         </div>
-                        <h1>常用的目录管理指令</h1>
+                        <h1>常用指令</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
@@ -127,8 +127,8 @@
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">1k</span> and
-                                Reading Time <span class="post-count">4</span> Minutes
+                                Words <span class="post-count">1.2k</span> and
+                                Reading Time <span class="post-count">5</span> Minutes
                             </span>
                             <div class="blank_box"></div>
                             <!-- 不蒜子统计 start -->
@@ -189,13 +189,6 @@
 
                         
                         <li>
-                            <a href="/categories/">Categories</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/archive/">Archives</a>
                         </li>
                         
@@ -204,6 +197,13 @@
                         
                         <li>
                             <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/categories/">Categories</a>
                         </li>
                         
                     
@@ -309,12 +309,20 @@
 <p>删除目录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># rm -rf home&#x2F;fishyoung&#x2F;a</span><br><span class="line">&#x2F;&#x2F; 删除目录时要递归(-r)删除，并且不需要一一确认(-f)</span><br><span class="line">-r, -R, --recursive： remove directories and their contents recursively</span><br></pre></td></tr></table></figure>
 <p>混合删除</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># rm -rf a test.txt</span><br><span class="line">&#x2F;&#x2F; 同时删除a目录和test.txt文件</span><br><span class="line"># rm -f test*</span><br><span class="line">&#x2F;&#x2F; 删除*前面名字一样的文件和文件夹</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># rm -rf a test.txt</span><br><span class="line">&#x2F;&#x2F; 同时删除a目录和test.txt文件</span><br><span class="line"># rm -f test*</span><br><span class="line">&#x2F;&#x2F; 删除*前面名字一样的文件和文件夹,*称为通配符，可以表示任意字符</span><br></pre></td></tr></table></figure>
+<h1 id="vim-vim-一款文本编辑器"><a href="#vim-vim-一款文本编辑器" class="headerlink" title="vim(vim 一款文本编辑器)"></a>vim(vim 一款文本编辑器)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># vim home&#x2F;fishyoung&#x2F;test.txt</span><br><span class="line">&#x2F;&#x2F; 打开文件</span><br><span class="line">:q回车</span><br><span class="line">&#x2F;&#x2F;退出打开的文件</span><br></pre></td></tr></table></figure>
+<h1 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 指令 &gt; 文件 &#x2F;&#x2F; 覆盖输出:覆盖之前的内容并添加指令输出的内容</span><br><span class="line"># 指令 &gt;&gt; 文件 &#x2F;&#x2F; 追加输出：不会覆盖之前的内容，直接添加指令输出的内容</span><br><span class="line">&#x2F;&#x2F; 若没有该文件会自动创建</span><br></pre></td></tr></table></figure>
+<h1 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cat home&#x2F;fishyoung&#x2F;test.txt</span><br><span class="line">打开文件(只查看不编辑)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># cat home&#x2F;test1.txt home&#x2F;test1.txt home&#x2F;test2.txt &gt; home&#x2F;hebing.txt &#x2F;&#x2F;覆盖</span><br><span class="line"># cat home&#x2F;test1.txt home&#x2F;test1.txt home&#x2F;test2.txt &gt;&gt; home&#x2F;hebing.txt &#x2F;&#x2F;不覆盖</span><br><span class="line">&#x2F;&#x2F; 合并文件，合并test.txt\test.txt\test2.txt三个文件成一个文件hebing.txt</span><br></pre></td></tr></table></figure>
 
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/03/06/vim/" data-toggle="tooltip" data-placement="top" title="vim">&larr; Previous Post</a>
+                    </li>
                     
                     
                     <li class="next">
@@ -431,7 +439,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#ls-list-列出文件和目录"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">ls(list)列出文件和目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#cd-change-directory-切换目录"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">cd(change directory)切换目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#pwd-print-working-directory-显示当前目录"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">pwd(print working directory)显示当前目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#mkdir-make-directory-创建目录"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">mkdir(make directory)创建目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#rmdir-remove-directory-删除空目录"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">rmdir(remove directory)删除空目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#touch创建文件"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">touch创建文件</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#cp-copy-复制文件或目录"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">cp(copy)复制文件或目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#mv-move-移动文件与目录"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">mv(move)移动文件与目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#rm-remove-移除文件或目录"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">rm(remove)移除文件或目录</span></a></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#ls-list-列出文件和目录"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">ls(list)列出文件和目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#cd-change-directory-切换目录"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">cd(change directory)切换目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#pwd-print-working-directory-显示当前目录"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">pwd(print working directory)显示当前目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#mkdir-make-directory-创建目录"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">mkdir(make directory)创建目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#rmdir-remove-directory-删除空目录"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">rmdir(remove directory)删除空目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#touch创建文件"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">touch创建文件</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#cp-copy-复制文件或目录"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">cp(copy)复制文件或目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#mv-move-移动文件与目录"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">mv(move)移动文件与目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#rm-remove-移除文件或目录"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">rm(remove)移除文件或目录</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#vim-vim-一款文本编辑器"><span class="toc-nav-number">10.</span> <span class="toc-nav-text">vim(vim 一款文本编辑器)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#输出重定向"><span class="toc-nav-number">11.</span> <span class="toc-nav-text">输出重定向</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#cat"><span class="toc-nav-number">12.</span> <span class="toc-nav-text">cat</span></a></li></ol>
             
           
           </div>
