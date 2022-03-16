@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          DDL-数据库操作 - caoyuqian&#39;s blog
+          DDL - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/03/07/DDL-数据库操作/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/03/07/DDL/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,10 +112,10 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#数据库" title="数据库">数据库</a>
+                              <a class="tag" href="/tags/#-数据库 -数据库操作 -表操作" title="-数据库 -数据库操作 -表操作">-数据库 -数据库操作 -表操作</a>
                             
                         </div>
-                        <h1>DDL-数据库操作</h1>
+                        <h1>DDL</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
@@ -125,7 +125,7 @@
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">59</span> and
+                                Words <span class="post-count">399</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -187,7 +187,7 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/categories/">Categories</a>
                         </li>
                         
                     
@@ -201,14 +201,7 @@
 
                         
                         <li>
-                            <a href="/categories/">Categories</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/photography/">Photography</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -216,6 +209,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/photography/">Photography</a>
                         </li>
                         
                     
@@ -274,11 +274,25 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><h3 id="查询所有数据库"><a href="#查询所有数据库" class="headerlink" title="查询所有数据库"></a>查询所有数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATEBADESE；</span><br></pre></td></tr></table></figure>
-<h3 id="查询当前数据库"><a href="#查询当前数据库" class="headerlink" title="查询当前数据库"></a>查询当前数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATEBASE();</span><br></pre></td></tr></table></figure>
-<h1 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATEBASE [IF NOT EXISTS] 数据库名称 [DEFAULT CHARSET 字符集] [COLLATE 排序规则];</span><br></pre></td></tr></table></figure>
-<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP DATEBASE [IF EXISTS] 数据库名;</span><br></pre></td></tr></table></figure>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USE 数据库名;</span><br></pre></td></tr></table></figure>
+                <p><code>ddl:date defination language 数据库定义语言</code></p>
+<h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATEBASE dbtest; &#x2F;&#x2F;创建数据库dbtest</span><br><span class="line">CREATE DATEBASE IF NOT EXISTS dbtest; &#x2F;&#x2F;如果数据库dbtest不存在则创建</span><br><span class="line">CREATE DATEBASE dbtest DEFUALT CHARSET utf8mb4; &#x2F;&#x2F;创建数据库dbtest并创建字符集utf8mb4</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATABASES; &#x2F;&#x2F;查询所有数据库</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USE dbtest; &#x2F;&#x2F;使用数据库dbtest</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATABASE(); &#x2F;&#x2F;查询当前数据库</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP DATEBASE dbtest; &#x2F;&#x2F;删除数据库dbtest</span><br><span class="line">DROP DATEBASE IF EXISTS dbtest; &#x2F;&#x2F;如果数据库dbtest存在则删除</span><br></pre></td></tr></table></figure>
+<h1 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h1><h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE tbla; &#x2F;&#x2F;创建表tbla</span><br><span class="line"></span><br><span class="line">CREATE TABLE tbla(</span><br><span class="line">id INT COMMENT &#39;编号&#39;, </span><br><span class="line">name VARCHAR(30)  COMMENT &#39;姓名&#39;</span><br><span class="line">) COMMENT &#39;用户表&#39;; </span><br><span class="line">&#x2F;&#x2F;创建表tbla；字段id，类型int，内容是编号，字段name，类型为vaechar，长度是30，内容是姓名；表内容是用户表</span><br></pre></td></tr></table></figure>
+<h3 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show tables; &#x2F;&#x2F;查看当前数据库的所有表</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESC tbla; &#x2F;&#x2F;查看表tbla结构</span><br></pre></td></tr></table></figure>
+<img src="/2022/03/07/DDL/2.png" class="">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE TABLE tbla; &#x2F;&#x2F;查看创建表tbla的语句</span><br></pre></td></tr></table></figure>
+<img src="/2022/03/07/DDL/3.png" class="">
+<h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla RENAME TO tblb；</span><br><span class="line">&#x2F;&#x2F;修改表名tbla为tblb</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla ADD id INT；</span><br><span class="line">ALTER TABLE tbla ADD id INT COMMENT &#39;编号&#39;；</span><br><span class="line">&#x2F;&#x2F;添加字段id，类型为int</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla MODIFY id VARCHAR(10)；</span><br><span class="line">&#x2F;&#x2F;修改表中字段id的数据类型为VARCHAR(10)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR；&#x2F;</span><br><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR COMMENT &#39;学生姓名&#39;；</span><br><span class="line">&#x2F;&#x2F;修改字段名name为sname，数据类型为varchar</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla DROP id；</span><br><span class="line">&#x2F;&#x2F;删除字段id</span><br></pre></td></tr></table></figure>
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE tbla；&#x2F;&#x2F;删除表tbla</span><br><span class="line">DROP TABLE IF EXIST tbla；&#x2F;&#x2F;如果表存在则删除表tbla</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TRUNCATE TABLE tbla； &#x2F;&#x2F;清空表</span><br></pre></td></tr></table></figure>
 
                 
                 <hr>
@@ -404,7 +418,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#查询"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">查询</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询所有数据库"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">查询所有数据库</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询当前数据库"><span class="toc-nav-number">1.0.2.</span> <span class="toc-nav-text">查询当前数据库</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#创建"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">创建</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#删除"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">删除</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#使用"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">使用</span></a></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#数据库操作"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">数据库操作</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#表操作"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">表操作</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建表"><span class="toc-nav-number">2.0.1.</span> <span class="toc-nav-text">创建表</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查看表"><span class="toc-nav-number">2.0.2.</span> <span class="toc-nav-text">查看表</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#修改表"><span class="toc-nav-number">2.0.3.</span> <span class="toc-nav-text">修改表</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除表"><span class="toc-nav-number">2.0.4.</span> <span class="toc-nav-text">删除表</span></a></li></ol></li></ol></li></ol>
             
           
           </div>
@@ -426,7 +440,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#数据库" title="数据库">数据库</a>
+                          <a class="tag" href="/tags/#-数据库 -数据库操作 -表操作" title="-数据库 -数据库操作 -表操作">-数据库 -数据库操作 -表操作</a>
                         
                     </div>
                 </section>
