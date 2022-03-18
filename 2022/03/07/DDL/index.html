@@ -125,7 +125,7 @@
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">399</span> and
+                                Words <span class="post-count">415</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -187,14 +187,21 @@
 
                         
                         <li>
-                            <a href="/categories/">Categories</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/photography/">Photography</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/categories/">Categories</a>
                         </li>
                         
                     
@@ -209,13 +216,6 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/photography/">Photography</a>
                         </li>
                         
                     
@@ -287,7 +287,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE TABLE tbla; &#x2F;&#x2F;查看创建表tbla的语句</span><br></pre></td></tr></table></figure>
 <img src="/2022/03/07/DDL/3.png" class="">
 <h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla RENAME TO tblb；</span><br><span class="line">&#x2F;&#x2F;修改表名tbla为tblb</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla ADD id INT；</span><br><span class="line">ALTER TABLE tbla ADD id INT COMMENT &#39;编号&#39;；</span><br><span class="line">&#x2F;&#x2F;添加字段id，类型为int</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla ADD id INT；</span><br><span class="line">ALTER TABLE tbla ADD id INT COMMENT &#39;编号&#39;；</span><br><span class="line">&#x2F;&#x2F;添加字段id，类型为int</span><br><span class="line">ALTER TABLE tbla</span><br><span class="line">ADD id INT,</span><br><span class="line">ADD gendar CHAR(1);</span><br><span class="line">&#x2F;&#x2F;添加多个字段</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla MODIFY id VARCHAR(10)；</span><br><span class="line">&#x2F;&#x2F;修改表中字段id的数据类型为VARCHAR(10)</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR；&#x2F;</span><br><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR COMMENT &#39;学生姓名&#39;；</span><br><span class="line">&#x2F;&#x2F;修改字段名name为sname，数据类型为varchar</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla DROP id；</span><br><span class="line">&#x2F;&#x2F;删除字段id</span><br></pre></td></tr></table></figure>
