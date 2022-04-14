@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          文件与目录管理 - caoyuqian&#39;s blog
+          彻底删除双系统引导项 - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/03/13/文件与目录管理/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/04/11/双系统彻底删除引导项/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,18 +112,20 @@
                     <div class="post-heading">
                         <div class="tags">
                             
+                              <a class="tag" href="/tags/#经验" title="经验">经验</a>
+                            
                         </div>
-                        <h1>文件与目录管理</h1>
+                        <h1>彻底删除双系统引导项</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
-                            2022-03-13
+                            2022-04-11
                         </span>
 
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">206</span> and
+                                Words <span class="post-count">153</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -258,26 +260,21 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="绝对路径与相对路径"><a href="#绝对路径与相对路径" class="headerlink" title="绝对路径与相对路径"></a>绝对路径与相对路径</h1><p><code>绝对路径</code>由<strong>根目录/</strong>写起，例如<code>/home/fishyoung</code></p>
-<p><code>相对目录</code>是<strong>相对于当前的工作路径</strong>写起，例如从<strong>/home</strong>路径下前往<strong>/home/fishyoung/Documents</strong>，可以写成：<code># cd fishyoung/Documents</code></p>
-<h1 id="目录的相关操作"><a href="#目录的相关操作" class="headerlink" title="目录的相关操作"></a>目录的相关操作</h1><h3 id="几个特殊的目录"><a href="#几个特殊的目录" class="headerlink" title="几个特殊的目录"></a>几个特殊的目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.			代表此层目录</span><br><span class="line">..			代表上一层目录</span><br><span class="line">-			代表前一个工作目录</span><br><span class="line">~			代表当前用户的家目录</span><br><span class="line">~fishyoung		代表fishyoung用户的家目录</span><br><span class="line">&#x2F; 			代表根目录</span><br></pre></td></tr></table></figure>
-<p>在所有目录底下都会存在的两个目录，分别是<code>.</code>与<code>..</code></p>
-<p><strong>思考：在linux中，根目录下有没有上层目录(..)存在？</strong></p>
-<img src="/2022/03/13/%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/1.png" class="">
-<p>存在.和..目录。但他们的权限和属性完全一致，说明<strong>根目录的上一层(..)与根目录自己(.)是同一个目录</strong>。</p>
-<h3 id="cd-change-directory-变换目录"><a href="#cd-change-directory-变换目录" class="headerlink" title="cd(change directory)变换目录"></a>cd(change directory)变换目录</h3>
+                <p> 最简单的方式是使用EasyUEFI进行删除，仅仅在管理uefi启动项中删除远远不够，重启后仍然能在启动项中看到已经删除的启动项。</p>
+<p>以及使用管理员身份运行cmd</p>
+<p>Bcdedit /enum firmware</p>
+<p>可以仍然看到ubuntu的标识符</p>
+<p>因此使用Bcdedit /delete {}也是无效的</p>
+<p>彻底删除的方法是首先在管理分区的资源管理器中删除efi中的boot和Ubuntu文件，切勿删除微软相关文件，然后在管理启动项中删除相应选项即完成彻底删除启动项</p>
+
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2022/03/17/DML/" data-toggle="tooltip" data-placement="top" title="DML">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2022/03/07/DDL/" data-toggle="tooltip" data-placement="top" title="DDL">Next Post &rarr;</a>
+                        <a href="/2022/03/18/用户管理/" data-toggle="tooltip" data-placement="top" title="用户管理">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -385,17 +382,6 @@
 
     
       
-        <aside id="sidebar">
-          <div id="toc" class="toc-article">
-          <strong class="toc-title">Contents</strong>
-          
-            
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#绝对路径与相对路径"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">绝对路径与相对路径</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#目录的相关操作"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">目录的相关操作</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#几个特殊的目录"><span class="toc-nav-number">2.0.1.</span> <span class="toc-nav-text">几个特殊的目录</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#cd-change-directory-变换目录"><span class="toc-nav-number">2.0.2.</span> <span class="toc-nav-text">cd(change directory)变换目录</span></a></li></ol></li></ol></li></ol>
-            
-          
-          </div>
-        </aside>
-      
     
 
                 
@@ -412,6 +398,8 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/#经验" title="经验">经验</a>
+                        
                     </div>
                 </section>
                 
