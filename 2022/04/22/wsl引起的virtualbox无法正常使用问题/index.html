@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          彻底删除双系统引导项 - caoyuqian&#39;s blog
+          wsl引起的virtualbox无法正常使用问题 - caoyuqian&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://caoyuqian1.github.io/2022/04/11/双系统彻底删除引导项/">
+    <link rel="canonical" href="https://caoyuqian1.github.io/2022/04/22/wsl引起的virtualbox无法正常使用问题/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -112,20 +112,18 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#经验" title="经验">经验</a>
-                            
                         </div>
-                        <h1>彻底删除双系统引导项</h1>
+                        <h1>wsl引起的virtualbox无法正常使用问题</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by CAOYUQIAN on
-                            2022-04-11
+                            2022-04-22
                         </span>
 
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">153</span> and
+                                Words <span class="post-count">40</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -260,25 +258,18 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p> 最简单的方式是使用EasyUEFI进行删除，仅仅在管理uefi启动项中删除远远不够，重启后仍然能在启动项中看到已经删除的启动项。</p>
-<p>以及使用管理员身份运行cmd</p>
-<p>Bcdedit /enum firmware</p>
-<p>可以仍然看到ubuntu的标识符</p>
-<p>因此使用Bcdedit /delete {}也是无效的</p>
-<p>彻底删除的方法是首先在管理分区的资源管理器中删除efi中的boot和Ubuntu文件，切勿删除微软相关文件，然后在管理启动项中删除相应选项即完成彻底删除启动项</p>
+                <p> hcl设备无法正常启动，想到virtualbox进而想到之前使用wsl</p>
+<p>解决方案，关闭windows的虚拟机平台和hyber-v</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit &#x2F;set hypervisorlaunchtype off</span><br></pre></td></tr></table></figure>
 
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2022/04/22/wsl引起的virtualbox无法正常使用问题/" data-toggle="tooltip" data-placement="top" title="wsl引起的virtualbox无法正常使用问题">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2022/03/18/用户管理/" data-toggle="tooltip" data-placement="top" title="用户管理">Next Post &rarr;</a>
+                        <a href="/2022/04/11/双系统彻底删除引导项/" data-toggle="tooltip" data-placement="top" title="彻底删除双系统引导项">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -402,8 +393,6 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#经验" title="经验">经验</a>
-                        
                     </div>
                 </section>
                 
