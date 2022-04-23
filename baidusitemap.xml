@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://caoyuqian1.github.io/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
     <loc>https://caoyuqian1.github.io/2022/04/22/wsl%E5%BC%95%E8%B5%B7%E7%9A%84virtualbox%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-04-22</lastmod>
   </url>
