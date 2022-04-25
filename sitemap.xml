@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://thedoubley.github.io/2022/03/07/DDL/</loc>
+    
+    <lastmod>2022-04-25T11:24:55.410Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thedoubley.github.io/2022/04/23/shell%25E6%2595%2599%25E7%25A8%258B%25E4%25B8%258E%25E7%25BC%2596%25E7%25A8%258B%25E5%25AE%259E%25E8%25B7%25B5/</loc>
+    
+    <lastmod>2022-04-25T11:01:53.950Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thedoubley.github.io/2022/03/07/MySQL/</loc>
+    
+    <lastmod>2022-04-25T10:59:51.142Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://thedoubley.github.io/2022/01/17/hexo/</loc>
     
     <lastmod>2022-04-25T10:46:59.831Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>https://thedoubley.github.io/2022/01/01/VS-Code%25E7%259A%2584%25E5%25AE%2589%25E8%25A3%2585%25E4%25B8%258E%25E9%2585%258D%25E7%25BD%25AE/</loc>
     
     <lastmod>2022-04-25T04:32:06.432Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thedoubley.github.io/2022/04/23/shell%25E7%25BC%2596%25E7%25A8%258B%25E5%25AE%259E%25E8%25B7%25B5/</loc>
-    
-    <lastmod>2022-04-25T04:27:28.889Z</lastmod>
     
   </url>
   
@@ -47,20 +61,6 @@
     <loc>https://thedoubley.github.io/2022/03/18/%25E7%2594%25A8%25E6%2588%25B7%25E7%25AE%25A1%25E7%2590%2586/</loc>
     
     <lastmod>2022-03-18T08:30:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thedoubley.github.io/2022/03/07/DDL/</loc>
-    
-    <lastmod>2022-03-17T07:44:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thedoubley.github.io/2022/03/17/DML/</loc>
-    
-    <lastmod>2022-03-17T07:33:08.000Z</lastmod>
     
   </url>
   

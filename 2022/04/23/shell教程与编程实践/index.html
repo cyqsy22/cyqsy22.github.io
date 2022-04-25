@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          shell编程实践 - cyq
+          shell教程与编程实践 - 技术手册
         
     </title>
 
-    <link rel="canonical" href="https://thedoubley.github.io/2022/04/23/shell编程实践/">
+    <link rel="canonical" href="https://thedoubley.github.io/2022/04/23/shell教程与编程实践/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -119,7 +119,7 @@
                               <a class="tag" href="/tags/#脚本" title="脚本">脚本</a>
                             
                         </div>
-                        <h1>shell编程实践</h1>
+                        <h1>shell教程与编程实践</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by caoyuqian on
@@ -264,15 +264,15 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="使用shell编写杨辉三角"><a href="#使用shell编写杨辉三角" class="headerlink" title="使用shell编写杨辉三角"></a>使用shell编写杨辉三角</h1><img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/yhsj1.png" class="">
+                <h1 id="使用shell编写杨辉三角"><a href="#使用shell编写杨辉三角" class="headerlink" title="使用shell编写杨辉三角"></a>使用shell编写杨辉三角</h1>
 <h2 id="回顾排列组合"><a href="#回顾排列组合" class="headerlink" title="回顾排列组合"></a>回顾排列组合</h2><p>从5个人中抽取3个人参加会议(3个人不能是同一个人，即无重复)</p>
 <p>①有顺序</p>
 <p>则有5×4×3中可能(抽第一个5种,第二个4种，第三个3中(从剩下三个人中选))</p>
 <p>即从n个人中抽取r个人，一共有n×(n-1)×…×(n-r)中可能</p>
-<p>即排列公式<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/pl.png" class=""></p>
+<p>即排列公式</p>
 <p>②无顺序</p>
 <p>上面的抽取的三人中，我们给他们分别排了序号，即使是抽取的相同三人，也因为顺序不同是不同的情况。现在我们无序地抽取三人，则基于5×4×3的基础上，要去掉重复的情况，选取的三人有3×2×1种排序方式，因此需要除以重复的情况，得到不重复的抽取三人的方法数</p>
-<p>即组合公式<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/zh.png" class=""></p>
+<p>即组合公式</p>
 <h2 id="回顾二项式定理"><a href="#回顾二项式定理" class="headerlink" title="回顾二项式定理"></a>回顾二项式定理</h2><p><strong>1</strong>    <em>n-1=0</em>，s=2⁰=0,(a+b)⁰=1</p>
 <p><strong>1 1</strong>    <em>n-1=1</em>,s=2¹=2,(a+b)¹=a+b</p>
 <p><strong>1 2 1</strong>    <em>n-1=2</em>,s=2²,(a+b)²=a²+2ab+b²</p>
@@ -281,7 +281,7 @@
 <p><strong>1 5 10 10 5 1</strong>    <em>n-1=5</em>,s=2⁵,…</p>
 <p><strong>1 6 15 20 15 6 1 </strong>   <em>n-1=6</em>,s=⁶,…</p>
 <p>二项式定理</p>
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/exs.png" class="">
+
 <p>先看这个例子(x+y)³=(x+y)(x+y)(x+y)</p>
 <p>三个式子相乘，可能的情况是：(从取x的角度看)</p>
 <div class="table-container">
@@ -349,14 +349,14 @@
 <p>因此将(x+y)³=(x+y)(x+y)(x+y)展开可以得到</p>
 <p>(x+y)³=C₃⁰x⁰y³+C₃¹xy²+C₃²x²y+C₃³x³y⁰=x³+3x²y+3xy²+y³</p>
 <p>因此在二项式定理中，展开以后有n项(a+b)相乘，假设从取b的角度看，可以全都不取b(b⁰)、有一项取b、两项取b(b²)…m项取b(b<sup>m</sup>)，概率为 C<sub>n</sub><sup>m</sup>，故有</p>
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/exs.png" class="">
+
 <h2 id="杨辉三角中的关系"><a href="#杨辉三角中的关系" class="headerlink" title="杨辉三角中的关系"></a>杨辉三角中的关系</h2><p>①每个数等于上面两个数之和，左右对称</p>
 <p>即<em>C(n+1,i)=C(n,i)+C(n,i-1)</em></p>
 <p>②第n行有n项</p>
 <p>③前n行有n(n+1)/2项，即1+2+3+…+n</p>
 <p>回顾等差数列</p>
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/dc1.png" class="">
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/dc2.png" class="">
+
+
 <p>④第n行第m个数为C<sub>n-1</sub><sup>m-1</sup></p>
 <p>⑤第n行的第m个数和第n-m+1个数相等</p>
 <p>⑥第n行的数字和为2<sup>n-1</sup></p>
@@ -376,14 +376,14 @@
 <p>此时前后的倍数关系为(i-j+1)/(j-1)</p>
 <p>现在让我们开始打印吧！</p>
 <p>①</p>
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/yh1.png" class="">
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/yh11.png" class="">
+
+
 <p>②</p>
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/yh2.png" class="">
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/yh22.png" class="">
+
+
 <h1 id="编写脚本生成脚本"><a href="#编写脚本生成脚本" class="headerlink" title="编写脚本生成脚本"></a>编写脚本生成脚本</h1><p>要求执行脚本后，会自动生成一个test.sh脚本，并赋予执行权限，同时在文件中加入以下注释信息</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">--------------------</span></span><br><span class="line"><span class="meta">#</span><span class="bash">Filename:test.sh//此处会根据文件名自动更换</span></span><br><span class="line"><span class="meta">#</span><span class="bash">Revison:1.0</span></span><br><span class="line"><span class="meta">#</span><span class="bash">Date:2022-04-23//此处自动更新时间</span></span><br><span class="line"><span class="meta">#</span><span class="bash">Author：Fishyoung</span></span><br><span class="line"><span class="meta">#</span><span class="bash">--------------------</span></span><br><span class="line"><span class="meta">#</span><span class="bash">Copyright：2022Fishyoung</span></span><br></pre></td></tr></table></figure>
-<img src="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/jb1.png" class="">
+
 <p>使用重定向将文本内容加入到脚本中</p>
 
                 
