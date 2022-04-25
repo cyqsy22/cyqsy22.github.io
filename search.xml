@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>git教程</title>
+      <link href="/2022/04/25/git%E6%95%99%E7%A8%8B/"/>
+      <url>/2022/04/25/git%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git (git-scm.com)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>shell编程实践</title>
       <link href="/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/"/>
       <url>/2022/04/23/shell%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/</url>
