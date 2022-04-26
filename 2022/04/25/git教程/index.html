@@ -123,7 +123,7 @@
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">4</span> and
+                                Words <span class="post-count">216</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -180,13 +180,6 @@
 
                     
 
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/about/">About</a>
-                        </li>
                         
                     
 
@@ -265,7 +258,18 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git (git-scm.com)</a></p>
+                <p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a></p>
+<p><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Pro Git Book</a></p>
+<h1 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h1><h2 id="配置个人信息"><a href="#配置个人信息" class="headerlink" title="配置个人信息"></a>配置个人信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;John Doe&quot;</span><br><span class="line">$ git config --global user.email johndoe@example.com</span><br></pre></td></tr></table></figure>
+<h2 id="选择默认分支"><a href="#选择默认分支" class="headerlink" title="选择默认分支"></a>选择默认分支</h2><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global init.defaultBranch main //默认为master，此处设置为main</span></span><br></pre></td></tr></table></figure>
+<h2 id="查看配置"><a href="#查看配置" class="headerlink" title="查看配置"></a>查看配置</h2><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --list</span></span><br><span class="line">	user.name=John Doe</span><br><span class="line">	user.email=johndoe@example.com</span><br><span class="line">	color.status=auto</span><br><span class="line">	color.branch=auto</span><br><span class="line">	color.interactive=auto</span><br><span class="line">	color.diff=auto</span><br><span class="line">	...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name </span><br><span class="line">John Doe</span><br><span class="line">$ git config --global user.email</span><br><span class="line">johndoe@example.com</span><br></pre></td></tr></table></figure>
+<h2 id="查看不同级别的配置文件"><a href="#查看不同级别的配置文件" class="headerlink" title="查看不同级别的配置文件"></a>查看不同级别的配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查看系统配置</span><br><span class="line">git config --system --list　　</span><br><span class="line">#查看当前用户（global）配置</span><br><span class="line">git config --global  --list</span><br></pre></td></tr></table></figure>
+<h2 id="Git相关的配置文件"><a href="#Git相关的配置文件" class="headerlink" title="Git相关的配置文件"></a><strong>Git相关的配置文件</strong></h2><p>1）Git\etc\gitconfig  ：Git 安装目录下的 gitconfig   —system 系统级</p>
+<p>2）C:\Users\Administrator\ .gitconfig   只适用于当前登录用户的配置  —global 全局</p>
+<h1 id="记录对仓库的更改"><a href="#记录对仓库的更改" class="headerlink" title="记录对仓库的更改"></a>记录对仓库的更改</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<h2 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<h2 id="将文件添加到暂存区"><a href="#将文件添加到暂存区" class="headerlink" title="将文件添加到暂存区"></a>将文件添加到暂存区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add . &#x2F;&#x2F;q</span><br></pre></td></tr></table></figure>
 
                 
                 <hr>
@@ -381,6 +385,17 @@
             <!-- Table of Contents -->
 
     
+      
+        <aside id="sidebar">
+          <div id="toc" class="toc-article">
+          <strong class="toc-title">Contents</strong>
+          
+            
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#基础配置"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">基础配置</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#配置个人信息"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">配置个人信息</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#选择默认分支"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">选择默认分支</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#查看配置"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">查看配置</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#查看不同级别的配置文件"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">查看不同级别的配置文件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Git相关的配置文件"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">Git相关的配置文件</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#记录对仓库的更改"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">记录对仓库的更改</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#创建仓库"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">创建仓库</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#查看文件状态"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">查看文件状态</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#将文件添加到暂存区"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">将文件添加到暂存区</span></a></li></ol></li></ol>
+            
+          
+          </div>
+        </aside>
       
     
 
