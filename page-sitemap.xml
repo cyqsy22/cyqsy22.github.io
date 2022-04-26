@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://thedoubley.github.io/about/</loc>
+        <lastmod>2022-04-26T02:45:20.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://thedoubley.github.io/photography/</loc>
         <lastmod>2022-04-25T11:31:15.043Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://thedoubley.github.io/categories/</loc>
         <lastmod>2022-02-27T10:29:40.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://thedoubley.github.io/tags/</loc>
-        <lastmod>2022-02-27T10:23:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

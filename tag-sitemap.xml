@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://thedoubley.github.io/tags/%25E6%2590%25AD%25E5%25BB%25BA%25E6%2595%2599%25E7%25A8%258B/</loc>
+        <lastmod>2022-04-25T11:46:35.001Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://thedoubley.github.io/tags/hexo/</loc>
+        <lastmod>2022-04-25T11:46:35.001Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://thedoubley.github.io/tags/%25E8%2584%259A%25E6%259C%25AC/</loc>
         <lastmod>2022-04-25T11:36:06.432Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,20 +47,6 @@
     <url>
         <loc>https://thedoubley.github.io/tags/%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593-%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593%25E6%2593%258D%25E4%25BD%259C-%25E8%25A1%25A8%25E6%2593%258D%25E4%25BD%259C/</loc>
         <lastmod>2022-04-25T11:27:28.658Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://thedoubley.github.io/tags/%25E6%2590%25AD%25E5%25BB%25BA%25E6%2595%2599%25E7%25A8%258B/</loc>
-        <lastmod>2022-04-25T10:46:59.831Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://thedoubley.github.io/tags/hexo/</loc>
-        <lastmod>2022-04-25T10:46:59.831Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

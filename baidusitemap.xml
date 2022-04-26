@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://thedoubley.github.io/2022/01/17/hexo/</loc>
+    <lastmod>2022-04-25</lastmod>
+  </url>
+  <url>
     <loc>https://thedoubley.github.io/2022/04/23/shell/</loc>
     <lastmod>2022-04-25</lastmod>
   </url>
@@ -18,10 +22,6 @@
   </url>
   <url>
     <loc>https://thedoubley.github.io/2022/03/07/MySQL/</loc>
-    <lastmod>2022-04-25</lastmod>
-  </url>
-  <url>
-    <loc>https://thedoubley.github.io/2022/01/17/hexo/</loc>
     <lastmod>2022-04-25</lastmod>
   </url>
   <url>
