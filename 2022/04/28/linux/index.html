@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="baidu-site-verification" content="093lY4ziMu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+    <title>
+        
+          linux - EQIV
+        
+    </title>
+
+    <link rel="canonical" href="https://EQIV.github.io/2022/04/28/linux/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS --> 
+    
+        
+<link rel="stylesheet" href="/css/dusign-light.css">
+
+        
+<link rel="stylesheet" href="/css/dusign-common-light.css">
+
+        
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+        
+<link rel="stylesheet" href="/css/toc.css">
+
+        <!-- background effects end -->
+    
+    
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/fonts.googleapis.css">
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- photography -->
+    
+<link rel="stylesheet" href="/css/photography.css">
+
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- background effects start -->
+    
+    <!-- background effects end -->
+
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../../img/default.jpg')
+                /*post*/
+            
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/qianming.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>linux</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by caoyuqian on
+                            2022-04-28
+                        </span>
+
+                        
+                            <div class="blank_box"></div>
+                            <span class="meta">
+                                Words <span class="post-count">3.7k</span> and
+                                Reading Time <span class="post-count">15</span> Minutes
+                            </span>
+                            <div class="blank_box"></div>
+                            <!-- 不蒜子统计 start -->
+                            <span class="meta">
+                                Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+                            </span>
+                            <!-- 不蒜子统计 end -->
+                        
+
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    
+    <div class="waveWrapper">
+        <div class="wave wave_before" style="background-image: url('/img/wave-light.png')"></div>
+        <div class="wave wave_after" style="background-image: url('/img/wave-light.png')"></div>
+    </div>
+    
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">EQIV</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/photography/">Photography</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/categories/">Categories</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="VMWare-windows版安装"><a href="#VMWare-windows版安装" class="headerlink" title="VMWare windows版安装"></a>VMWare windows版安装</h2><p><a href="https://www.vmware.com/go/getworkstation-win" target="_blank" rel="noopener">https://www.vmware.com/go/getworkstation-win</a><br>激活密钥网上搜</p>
+<h2 id="Linux镜像下载"><a href="#Linux镜像下载" class="headerlink" title="Linux镜像下载"></a>Linux镜像下载</h2><h5 id="Centos"><a href="#Centos" class="headerlink" title="Centos"></a>Centos</h5><p><a href="https://www.centos.org/centos-linux/" target="_blank" rel="noopener">https://www.centos.org/centos-linux/</a><br>64位操作系统下载：amd64或x86-64，32位下载：i386选择任意国内镜像网站，下载后缀DVD.iso即可</p>
+<h5 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h5><p><a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener">https://ubuntu.com/download/desktop</a></p>
+<h1 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h1><p><strong>绝对路径 由根目录/写起，如$ cd /home/fishyoung、$ cd /bin 相对路径 从当前目录写起，如$ cd fishyoung,cd ./fishyoung当前目录下，cd ../上一级目录下</strong></p>
+<h2 id="ls-list-列出文件和目录"><a href="#ls-list-列出文件和目录" class="headerlink" title="ls(list)列出文件和目录"></a>ls(list)列出文件和目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ls 列出当前目录下的所有子目录和文件</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ls -a 列出当前目录下的所有文件，包含隐藏文件(.开头)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ls -l 以长数据串形式列出(详细信息)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ls -la 列出全部文件(包括隐藏文件)的详细信息</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls -lh 以可读性较高的形式列出文件的详细信息</span><br><span class="line">-h, --human-readable:with -l, print sizes in human readable format (e.g., 1K 234M 2G)</span><br></pre></td></tr></table></figure>
+<h2 id="cd-change-directory-切换目录"><a href="#cd-change-directory-切换目录" class="headerlink" title="cd(change directory)切换目录"></a>cd(change directory)切换目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># cd &#x2F;home&#x2F;fishyoung 使用绝对路径切换到fishyoung目录</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># cd home&#x2F;fishyoung 使用相对目录切换到fishyoung目录</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd ~ 切换到当前用户的家目录</span><br><span class="line"># cd &#x2F;切换到当前用户的根目录</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># cd ..返回上一级目录</span><br></pre></td></tr></table></figure>
+<h2 id="pwd-print-working-directory-显示当前目录"><a href="#pwd-print-working-directory-显示当前目录" class="headerlink" title="pwd(print working directory)显示当前目录"></a>pwd(print working directory)显示当前目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># pwd</span><br></pre></td></tr></table></figure>
+<h2 id="mkdir-make-directories-创建目录"><a href="#mkdir-make-directories-创建目录" class="headerlink" title="mkdir(make directories)创建目录"></a>mkdir(make directories)创建目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># mkdir test</span><br><span class="line"># mkdir &#x2F;home&#x2F;fishyoung&#x2F;test</span><br><span class="line"># mkdir home&#x2F;test</span><br><span class="line">&#x2F;&#x2F;在当前目录下创建test文件夹(只能在已存在的目录下创建)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># mkdir -p test1&#x2F;test2&#x2F;test3&#x2F;test4 创建test4包括它的父级目录test1、2、3们，即递归创建test1、2、3、4</span><br><span class="line">&#x2F;&#x2F;-p,--parents:no error if existing, make parent directories(父级目录) as needed</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># mkdir test1 test2 test3 一次性创建多个文件夹</span><br></pre></td></tr></table></figure>
+<h2 id="rmdir-remove-directories-删除空目录"><a href="#rmdir-remove-directories-删除空目录" class="headerlink" title="rmdir(remove directories)删除空目录"></a>rmdir(remove directories)删除空目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># rmdir a 删除空目录a</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># rmdir -p a&#x2F;b&#x2F;c 删除空目录c和它的父级空目录a、b们，即当a目录下还有其他空目录时，递归删除,等价于</span><br><span class="line"># rmdir a&#x2F;b&#x2F;c a&#x2F;b a </span><br><span class="line">-p, --parents：remove  DIRECTORY  and  its ancestors(祖先)</span><br></pre></td></tr></table></figure>
+<p>rm命令能删除任意目录，rmdir一般用于检测是否为空目录</p>
+<h2 id="touch创建文件"><a href="#touch创建文件" class="headerlink" title="touch创建文件"></a>touch创建文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># touch test.txt</span><br><span class="line"># touch &#x2F;home&#x2F;fishyoung&#x2F;test.txt</span><br><span class="line"># touch home&#x2F;test.txt</span><br><span class="line">&#x2F;&#x2F;在当前目录下创建test.txt文件</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch test1.txt test2.txt</span><br><span class="line">&#x2F;&#x2F;创建多个文件</span><br></pre></td></tr></table></figure>
+<h2 id="cp-copy-复制文件或目录"><a href="#cp-copy-复制文件或目录" class="headerlink" title="cp(copy)复制文件或目录"></a>cp(copy)复制文件或目录</h2><p>文件复制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># cp &#x2F;home&#x2F;test.txt &#x2F;home&#x2F;fishyoung&#x2F;test.txt</span><br><span class="line">&#x2F;&#x2F;把home目录下的test.txt文件复制到fishyoung目录下</span><br><span class="line"># cp &#x2F;home&#x2F;test.txt &#x2F;home&#x2F;fishyoung&#x2F;changename.txt</span><br><span class="line">&#x2F;&#x2F;把home目录下的test.txt文件复制到fishyoung目录下，并改名为changename.txt</span><br></pre></td></tr></table></figure>
+<p>目录复制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># cp -r &#x2F;home&#x2F;fishyoung&#x2F;a &#x2F;home</span><br><span class="line">&#x2F;&#x2F;把a目录连同该目录下的所有内容一同复制到home目录下</span><br><span class="line"># cp -r &#x2F;home&#x2F;fishyoung&#x2F;a &#x2F;home&#x2F;d</span><br><span class="line">&#x2F;&#x2F;把a目录连同该目录下的所有内容一同复制到home目录下，并改名为d</span><br><span class="line">-r, --recursive：copy directories recursively递归复制</span><br></pre></td></tr></table></figure>
+<h2 id="mv-move-移动文件与目录"><a href="#mv-move-移动文件与目录" class="headerlink" title="mv(move)移动文件与目录"></a>mv(move)移动文件与目录</h2><p>移动文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># mv &#x2F;home&#x2F;fishyoung&#x2F;test.txt &#x2F;home&#x2F;test.txt </span><br><span class="line">&#x2F;&#x2F;把fishyoung目录下的text.txt移到home目录下</span><br><span class="line"># mv &#x2F;home&#x2F;test.txt &#x2F;home&#x2F;fishyoung&#x2F;changename.txt</span><br><span class="line">&#x2F;&#x2F;把home目录下的test.txt文件移动到fishyoung目录下，并改名为changename.txt</span><br></pre></td></tr></table></figure>
+<p>移动目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># mv &#x2F;home&#x2F;fishyoung&#x2F;a &#x2F;home</span><br><span class="line">&#x2F;&#x2F;将a目录完全移动到home目录下</span><br><span class="line"># mv &#x2F;home&#x2F;fishyoung&#x2F;a &#x2F;home&#x2F;d</span><br><span class="line">&#x2F;&#x2F;将a目录完全移动到home目录下并改名为d</span><br></pre></td></tr></table></figure>
+<p>重命名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.移动顺便重命名(同上)</span><br><span class="line">2.不移动只重命名</span><br><span class="line"># mv &#x2F;home&#x2F;test &#x2F;home&#x2F;change</span><br></pre></td></tr></table></figure>
+<h2 id="rm-remove-移除文件或目录"><a href="#rm-remove-移除文件或目录" class="headerlink" title="rm(remove)移除文件或目录"></a>rm(remove)移除文件或目录</h2><p>删除文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># rm &#x2F;home&#x2F;text.txt</span><br><span class="line">rm:是否删除普通文件&quot;&#x2F;home&#x2F;text.txt&quot;? yes</span><br><span class="line">&#x2F;&#x2F; 移除text.txt,系统提醒并输入yes&#x2F;no</span><br><span class="line"># rm -f &#x2F;home&#x2F;text.txt</span><br><span class="line">&#x2F;&#x2F; 直接删除text.txt</span><br><span class="line"> -f, --force(强制):ignore nonexistent files and arguments, never prompt</span><br></pre></td></tr></table></figure>
+<p>删除目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># rm -rf home&#x2F;fishyoung&#x2F;a</span><br><span class="line">&#x2F;&#x2F; 删除目录时要递归(-r)删除，并且不需要一一确认(-f)</span><br><span class="line">-r, -R, --recursive： remove directories and their contents recursively</span><br></pre></td></tr></table></figure>
+<p>混合删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># rm -rf a test.txt</span><br><span class="line">&#x2F;&#x2F; 同时删除a目录和test.txt文件</span><br><span class="line"># rm -f test*</span><br><span class="line">&#x2F;&#x2F; 删除*前面名字一样的文件和文件夹,*称为通配符，可以表示任意字符</span><br></pre></td></tr></table></figure>
+<h2 id="vim-vim-一款文本编辑器"><a href="#vim-vim-一款文本编辑器" class="headerlink" title="vim(vim 一款文本编辑器)"></a>vim(vim 一款文本编辑器)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># vim home&#x2F;fishyoung&#x2F;test.txt</span><br><span class="line">&#x2F;&#x2F; 打开文件</span><br><span class="line">:q回车</span><br><span class="line">&#x2F;&#x2F;退出打开的文件</span><br></pre></td></tr></table></figure>
+<h2 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 指令 &gt; 文件 &#x2F;&#x2F; 覆盖输出:覆盖之前的内容并添加指令输出的内容</span><br><span class="line"># 指令 &gt;&gt; 文件 &#x2F;&#x2F; 追加输出：不会覆盖之前的内容，直接添加指令输出的内容</span><br><span class="line">&#x2F;&#x2F; 若没有该文件会自动创建</span><br></pre></td></tr></table></figure>
+<h2 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cat home&#x2F;fishyoung&#x2F;test.txt</span><br><span class="line">打开文件(只查看不编辑)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># cat home&#x2F;test1.txt home&#x2F;test1.txt home&#x2F;test2.txt &gt; home&#x2F;hebing.txt &#x2F;&#x2F;覆盖</span><br><span class="line"># cat home&#x2F;test1.txt home&#x2F;test1.txt home&#x2F;test2.txt &gt;&gt; home&#x2F;hebing.txt &#x2F;&#x2F;不覆盖</span><br><span class="line">&#x2F;&#x2F; 合并文件，合并test.txt\test.txt\test2.txt三个文件成一个文件hebing.txt</span><br></pre></td></tr></table></figure>
+<h2 id="ln-link-files-为文件创建链接"><a href="#ln-link-files-为文件创建链接" class="headerlink" title="ln(link files)为文件创建链接"></a>ln(link files)为文件创建链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># ln &#x2F;home&#x2F;profile &#x2F;HOME&#x2F;lnhprofile </span><br><span class="line"># ln profile lnhprofile</span><br><span class="line">&#x2F;&#x2F;为文件profile创建硬链接Inhprofile</span><br><span class="line">&#x2F;&#x2F;-f，强制创建连接，不论文件或目录是否存在</span><br><span class="line">1.硬链接以文件副本形式存在，但不占用空间</span><br><span class="line">2.只能给文件创建硬链接</span><br><span class="line">3.只有在同一个文件系统中才能创建硬链接</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># ln -s profile lnsprofile</span><br><span class="line">&#x2F;&#x2F;为文件按profile创建软连接lnsprofile</span><br><span class="line">-s，--symbolic：符号连接(软连接)</span><br><span class="line">1.以路径形式存在，类似于windows中的快捷方式</span><br><span class="line">2.可以给文件和目录创建软连接</span><br><span class="line">3.可以跨文件系统</span><br><span class="line">4.可以对不存在的文件名创建软连接</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ll &#x2F;&#x2F;输出</span><br></pre></td></tr></table></figure>
+<h2 id="tar-gzip打包压缩与解压缩"><a href="#tar-gzip打包压缩与解压缩" class="headerlink" title="tar/gzip打包压缩与解压缩"></a>tar/gzip打包压缩与解压缩</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># tar -cvf test.tar test &#x2F;&#x2F;把test打包成test.tar</span><br><span class="line"># gzip test.tar &#x2F;&#x2F;把test.tar压缩成test.ta.gz</span><br><span class="line"># tar -xvf test.tar &#x2F;home &#x2F;&#x2F;把test.tar解打包到home目录</span><br><span class="line"># tar -zcvf test.tar.gz &#x2F;home &#x2F;&#x2F;把test.tar.gz解压缩到home目录</span><br></pre></td></tr></table></figure>
+<h2 id="df-disk-full-列出磁盘空间的使用情况"><a href="#df-disk-full-列出磁盘空间的使用情况" class="headerlink" title="df(disk full)列出磁盘空间的使用情况"></a><strong>df(disk full)列出磁盘空间的使用情况</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># df</span><br><span class="line"># df -h &#x2F;&#x2F;以可读性高的形式查看磁盘空间，-h，--humen-readable</span><br></pre></td></tr></table></figure>
+<p>硬盘和光盘以及系统占用</p>
+<h2 id="free查看内存使用情况"><a href="#free查看内存使用情况" class="headerlink" title="free查看内存使用情况"></a><strong>free查看内存使用情况</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># free</span><br><span class="line"># free -m &#x2F;&#x2F;以Mb兆为单位查看内存</span><br></pre></td></tr></table></figure>
+<h2 id="head-n查看文件的前n行"><a href="#head-n查看文件的前n行" class="headerlink" title="head -n查看文件的前n行"></a><strong>head -n查看文件的前n行</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># head test &#x2F;&#x2F;默认查看前10行，查看test文件的前十行</span><br><span class="line"># head -5 tset &#x2F;&#x2F;查看test文件的前5行</span><br></pre></td></tr></table></figure>
+<h2 id="tail"><a href="#tail" class="headerlink" title="tail"></a><strong>tail</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># tail test &#x2F;&#x2F;默认显示后十行，查看tst文件的后十行</span><br><span class="line"># tail -1 test &#x2F;&#x2F;查看test文件的最后一行</span><br><span class="line"># tail -f test &#x2F;&#x2F;查看文件内容的动态变化</span><br><span class="line">-f, --follow:output appended data as the file grows &#x2F;&#x2F;随着文件变化输出追加的数据，内容不能是自己手动添加的，必须是系统添加的，可以借助输出重定向</span><br></pre></td></tr></table></figure>
+<h2 id="less以较少的内容进行输出"><a href="#less以较少的内容进行输出" class="headerlink" title="less以较少的内容进行输出"></a><strong>less以较少的内容进行输出</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">＃ less &#x2F;home&#x2F;test &#x2F;&#x2F;以较少内容查看test。:20 从第20行开始查看，空格：翻页，上下键</span><br></pre></td></tr></table></figure>
+<h2 id="wc统计文件按内容信息-行数、单词数、字节数"><a href="#wc统计文件按内容信息-行数、单词数、字节数" class="headerlink" title="wc统计文件按内容信息(行数、单词数、字节数)"></a><strong>wc统计文件按内容信息(行数、单词数、字节数)</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># wc -lwc test &#x2F;&#x2F;显示文件的行数、单词数、字节数</span><br><span class="line"># wc -l test&#x2F;&#x2F;显示文件的行数</span><br><span class="line"># wc -w test&#x2F;&#x2F;显示文件的单词数，依照空格来统计单词的数量</span><br><span class="line"># wc -c test&#x2F;&#x2F;显示文件的字节数</span><br><span class="line">-l, --lines：print the newline counts</span><br><span class="line">-w, --words：print the word counts</span><br><span class="line">-c, --bytes：print the byte counts</span><br></pre></td></tr></table></figure>
+<h2 id="date操作-读取-、设置-时间和日期"><a href="#date操作-读取-、设置-时间和日期" class="headerlink" title="date操作(读取*、设置)时间和日期"></a><strong>date操作(读取*、设置)时间和日期</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># date</span><br><span class="line">&#x2F;&#x2F;输出时间，2022年3月12日 星期六 12:42 CST</span><br><span class="line"># date +%F</span><br><span class="line"># date %Y-%m-%d</span><br><span class="line">&#x2F;&#x2F;输出年月日,2022-03-12</span><br><span class="line"># date &quot;+%F %T&quot; 常用</span><br><span class="line"># date &#39;+%F %T&#39;</span><br><span class="line"># date &quot;+%Y-%m-%d-%H:%M:%S&quot;</span><br><span class="line">&#x2F;&#x2F;输出年月日时分秒，2022-3-12 12:48:30</span><br><span class="line"># date -d &quot;-1 day&quot; &quot;+%Y-%m-%d-%H:%M:%S&quot; &#x2F;&#x2F;输出一天前的时间</span><br><span class="line"># date -d &quot; -1 year&quot; &quot;+%Y-%m-%d-%H:%M:%S&quot; &#x2F;&#x2F;输出一年之前的时间</span><br><span class="line"># date -d &quot; +1 year&quot; &quot;+%Y-%m-%d-%H:%M:%S&quot; &#x2F;&#x2F;输出一年之后的时间</span><br><span class="line">%F--full date : same as %Y-%m-%d%</span><br><span class="line">%T--time : same as %H:%M:%S</span><br><span class="line">-d, --date&#x3D;STRING:display time described by STRING, not &#39;now&#39; &#x2F;&#x2F;显示由STRING描述的时间</span><br></pre></td></tr></table></figure>
+<h2 id="cal-calendar-操作日历"><a href="#cal-calendar-操作日历" class="headerlink" title="cal(calendar)操作日历"></a><strong>cal(calendar)操作日历</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># cal</span><br><span class="line"># cal -1 &#x2F;&#x2F;输出当前月份的日历（默认起始日是周日）</span><br><span class="line"># cal -3 &#x2F;&#x2F;输出上个月、本月、下个月的日历</span><br><span class="line"># cal -y &#x2F;&#x2F;输出一年的日历</span><br><span class="line"># cal -s &#x2F;&#x2F;输出当前月份，每周起始日周日</span><br><span class="line"># cal -m &#x2F;&#x2F;输出当前月份，每周起始日周一</span><br><span class="line"># cal -j &#x2F;&#x2F;输出当前月份，日期为该年的第几天</span><br></pre></td></tr></table></figure>
+<h2 id="clear-clear-screen-ctrl-L清屏"><a href="#clear-clear-screen-ctrl-L清屏" class="headerlink" title="clear(clear screen)/ctrl+L清屏"></a><strong>clear(clear screen)/ctrl+L清屏</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># clear</span><br><span class="line"># ctrl+L &#x2F;&#x2F;键盘</span><br></pre></td></tr></table></figure>
+<h2 id="管道"><a href="#管道" class="headerlink" title="管道|"></a><strong>管道|</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># ls&#x2F;home|grep y （过滤案例，100%使用）</span><br><span class="line">&#x2F;&#x2F;查询出home路径下包含y字母的文档。以管道为分割线，前面的输出就是后面的输入。grep过滤指令</span><br><span class="line"># cat test|less</span><br><span class="line">&#x2F;&#x2F;实现less的等价效果</span><br><span class="line"># ls|wc -l</span><br><span class="line"># ls|wc -w</span><br><span class="line">&#x2F;&#x2F;统计文件的个数，建议用l不用w，以防文件名中包含空格</span><br></pre></td></tr></table></figure>
+<h2 id="hostname操作-读取-、设置-主机名"><a href="#hostname操作-读取-、设置-主机名" class="headerlink" title="hostname操作(读取*、设置)主机名"></a><strong>hostname操作(读取*、设置)主机名</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># hostname &#x2F;&#x2F;输出完整的主机名</span><br><span class="line"># hostname -f &#x2F;&#x2F;输出当前主机名中的FQDN(全限定域名)</span><br></pre></td></tr></table></figure>
+<h2 id="id显示用户的基本信息-用户id、用户组id、附加id"><a href="#id显示用户的基本信息-用户id、用户组id、附加id" class="headerlink" title="id显示用户的基本信息(用户id、用户组id、附加id)"></a><strong>id显示用户的基本信息(用户id、用户组id、附加id)</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># id &#x2F;&#x2F;默认显示当前用户的基本信息</span><br><span class="line"># id fishyoung &#x2F;&#x2F;显示指定用户的基本信息</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如何验证上述信息是否正确？</span><br><span class="line">验证用户信息，通过文件&#x2F;etc&#x2F;passwd</span><br><span class="line">验证用户组信息，通过文件&#x2F;etc&#x2F;group</span><br><span class="line"># cat &#x2F;etc&#x2F;passwd</span><br></pre></td></tr></table></figure>
+<h2 id="whoami显示当前登录的用户名"><a href="#whoami显示当前登录的用户名" class="headerlink" title="whoami显示当前登录的用户名"></a><strong>whoami显示当前登录的用户名</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># whoami &#x2F;&#x2F;输出用户名，一般用于shell脚本，用于获取当前操作的用户名方便记录日志</span><br></pre></td></tr></table></figure>
+<p><strong>ps查看系统进程信息，重点</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># ps -e &#x2F;&#x2F;显示全部进程，-e：Select all processes.Identical to -A.</span><br><span class="line"># ps -f &#x2F;&#x2F;显示完整格式 full-format</span><br><span class="line"># ps -ef &#x2F;&#x2F;以完整格式显示全部进程</span><br><span class="line">ps - report a snapshot of the current processes.报告一个当前进程的简要说明</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">UID：执行该进程的用户id</span><br><span class="line">PID：进程id</span><br><span class="line">PPID：该进程的父级进程id，如果一个进程没有父级进程，该进程称为僵尸进程</span><br><span class="line">C：cpu的占用率，形式为百分数</span><br><span class="line">STIME：该进程的启动时间</span><br><span class="line">TTY：发起该进程的终端设备，如果显示？则该进程不是由终端发起的</span><br><span class="line">TIME：进程的执行时间</span><br><span class="line">CMD：进程对应的名称或者路径</span><br><span class="line"># ps -ef|grep firefox</span><br><span class="line">&#x2F;&#x2F;结合管道过滤出想要查看的firefox进程，只显示一个进程时说明没打开进程，至少要两个</span><br></pre></td></tr></table></figure>
+<h2 id="top动态显示服务器进程占用的资源，重点"><a href="#top动态显示服务器进程占用的资源，重点" class="headerlink" title="top动态显示服务器进程占用的资源，重点"></a><strong>top动态显示服务器进程占用的资源，重点</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># top &#x2F;&#x2F;quit退出；M按照内存降序排序；P按照cpu使用率降序排列，1切换展示各个cpu的详细信息</span><br><span class="line">top - display Linux processes</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">PID：进程id</span><br><span class="line">user：该进程对应的用户</span><br><span class="line">PR:priority，优先级</span><br><span class="line">VIRT：virtual，虚拟内存</span><br><span class="line">RES：resident，常驻内存</span><br><span class="line">SHR：share，共享内存</span><br><span class="line">&#x2F;&#x2F;申请500M内存，实际使用320M。500M为虚拟内存，320M为常驻内存，如果其中包含了依赖关系，则320M中还包含共享内存。进程实际使用的内存&#x3D;常驻内存-共享内存</span><br><span class="line">S：sleeping，表示进程睡眠的状态，s为睡眠，r为运行，重点</span><br><span class="line">%CPU：表示CPU占用的百分比，重点</span><br><span class="line">%MEM：便是内存占用的百分比，重点</span><br><span class="line">TIME+：执行的时间</span><br><span class="line">COMMAND：进程的名称或者路径，重点</span><br></pre></td></tr></table></figure>
+<h2 id="du-disk-used-查看磁盘空间的使用量"><a href="#du-disk-used-查看磁盘空间的使用量" class="headerlink" title="du(disk used)查看磁盘空间的使用量"></a><strong>du(disk used)查看磁盘空间的使用量</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># du &#x2F;&#x2F;列出磁盘空间的使用量，包括总量和每个目录的占用量</span><br><span class="line"># du &#x2F;home &#x2F;&#x2F;以可读性较高的形式列出home目录的使用量</span><br><span class="line"># du -sh &#x2F;&#x2F;以可读性较高的形式查看磁盘总容量</span><br><span class="line"># du -sh &#x2F;home &#x2F;&#x2F;以可队形较高的形式列出home目录的总容量</span><br><span class="line">-s，summary列出总量，而不用列出每个目录的占用量</span><br><span class="line">-h，以可读性较高的形式</span><br></pre></td></tr></table></figure>
+<h2 id="find用于查找文件"><a href="#find用于查找文件" class="headerlink" title="find用于查找文件"></a><strong>find用于查找文件</strong></h2><p>根据名称搜索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># find &#x2F;home&#x2F;fishyoung -name newfile</span><br><span class="line">&#x2F;&#x2F;在fishyoung目录下查找名字为newfile的文件，-name按照名称搜索，支持模糊搜索</span><br><span class="line"># find &#x2F; -name *.txt</span><br><span class="line">&#x2F;&#x2F;查找根目录下所有后缀为txt的文件</span><br><span class="line"># find &#x2F; -name *.txt|wc -l</span><br><span class="line">&#x2F;&#x2F;查找根目录下所有后缀为txt的文件并显示个数</span><br></pre></td></tr></table></figure>
+<p>根据类型搜索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># find &#x2F;home&#x2F;fishyoung -type d &#x2F;&#x2F;在fishyoung目录下查找类型为文件夹</span><br><span class="line"># find &#x2F;home&#x2F;fishyoung -type f &#x2F;&#x2F;在fishyoung目录下查找类型为文件</span><br><span class="line">-type按照类型搜索，-为文件(搜索时用f表示)，d为文件夹</span><br></pre></td></tr></table></figure>
+<h2 id="service用于控制一些软件的服务启动-停止-重启，重点"><a href="#service用于控制一些软件的服务启动-停止-重启，重点" class="headerlink" title="service用于控制一些软件的服务启动/停止/重启，重点"></a><strong>service用于控制一些软件的服务启动/停止/重启，重点</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># service httpd start</span><br><span class="line">&#x2F;&#x2F;启动本机安装的apache(网站服务器软件)，其服务名为httpd；可以通过# ps -ef|grep httpd查看启动http的进程</span><br><span class="line"># service httpd stop</span><br><span class="line">&#x2F;&#x2F;停止本机安装的apache(网站服务器软件)</span><br><span class="line"># service httpd restart</span><br><span class="line">&#x2F;&#x2F;重启本机安装的apache(网站服务器软件)</span><br></pre></td></tr></table></figure>
+<h2 id="kill杀死进程"><a href="#kill杀死进程" class="headerlink" title="kill杀死进程"></a><strong>kill杀死进程</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># kill 3453</span><br><span class="line">&#x2F;&#x2F;杀死PID为3453的进程,配合ps使用</span><br><span class="line"># kiiall httpd</span><br><span class="line">&#x2F;&#x2F;杀死所有httpd进程</span><br></pre></td></tr></table></figure>
+<h2 id="ifconfig操作网卡相关指令"><a href="#ifconfig操作网卡相关指令" class="headerlink" title="ifconfig操作网卡相关指令"></a><strong>ifconfig操作网卡相关指令</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ifconfig</span><br></pre></td></tr></table></figure>
+<h2 id="reboot重新启动计算机"><a href="#reboot重新启动计算机" class="headerlink" title="reboot重新启动计算机"></a><strong>reboot重新启动计算机</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># reboot &#x2F;&#x2F;重启</span><br><span class="line"># reboot -w&#x2F;&#x2F;模拟重启，但是不重启，只写入日志</span><br></pre></td></tr></table></figure>
+<h2 id="shutdown关机-公司慎用"><a href="#shutdown关机-公司慎用" class="headerlink" title="shutdown关机(公司慎用)"></a><strong>shutdown关机(公司慎用)</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># shutdown</span><br><span class="line">&#x2F;&#x2F;关机</span><br><span class="line"># shutdown -h now</span><br><span class="line">&#x2F;&#x2F;立即关机</span><br><span class="line"># shutdown -h 23:00</span><br><span class="line">&#x2F;&#x2F;23：00定时关机</span><br><span class="line"># shutdown -h 23:00 &quot;请保存好你的文档&quot;</span><br><span class="line">&#x2F;&#x2F;23：00定时关机并提示，请保存好你的文档</span><br><span class="line"># shutdown -c</span><br><span class="line">&#x2F;&#x2F;取消关机，centos7以上，centos7以下ctrl+c</span><br><span class="line"># init 0</span><br><span class="line"># halt</span><br><span class="line"># poweroff &#x2F;&#x2F;其他关机命令</span><br></pre></td></tr></table></figure>
+<h2 id="uptime输出计算机的在线时间"><a href="#uptime输出计算机的在线时间" class="headerlink" title="uptime输出计算机的在线时间"></a><strong>uptime输出计算机的在线时间</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># uptime</span><br></pre></td></tr></table></figure>
+<h2 id="uname获取操作系统相关信息"><a href="#uname获取操作系统相关信息" class="headerlink" title="uname获取操作系统相关信息"></a><strong>uname获取操作系统相关信息</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># uname &#x2F;&#x2F;获取操作系统的名称</span><br><span class="line"># uname -a &#x2F;&#x2F;获取操作系统的全部信息</span><br></pre></td></tr></table></figure>
+<h2 id="netstat查看网络的连接信息"><a href="#netstat查看网络的连接信息" class="headerlink" title="netstat查看网络的连接信息"></a><strong>netstat查看网络的连接信息</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># netstat -tnlp</span><br><span class="line">-t:只显示tcp协议的连接</span><br><span class="line">-n，--numeric：显示数字ip地址</span><br><span class="line">-l，--listening：仅显示state（状态）列中值为LISTIN(正在监听)的连接</span><br><span class="line">-p，--program：显示进程的pid和进程名称</span><br></pre></td></tr></table></figure>
+<h2 id="man-manual-手册"><a href="#man-manual-手册" class="headerlink" title="man(manual)手册"></a><strong>man(manual)手册</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># man ls &#x2F;&#x2F;查询ls指令的全部信息，quit退出</span><br></pre></td></tr></table></figure>
+
+                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2022/04/25/git教程/" data-toggle="tooltip" data-placement="top" title="git">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                <!-- tip start -->
+                
+
+                
+                <div class="comment_notes">
+                    <p>
+                        This is copyright.
+                    </p>
+                </div>
+                
+                <!-- tip end -->
+
+                <!-- Music start-->
+                
+                
+<link rel="stylesheet" href="/css/music-player/fonts/iconfont.css">
+
+
+<link rel="stylesheet" href="/css/music-player/css/reset.css">
+
+
+<link rel="stylesheet" href="/css/music-player/css/player.css">
+
+
+<div class="music-player">
+    <audio class="music-player__audio" ></audio>
+    <div class="music-player__main">
+        <div class="music-player__blur"></div>
+        <div class="music-player__disc">
+            <div class="music-player__image">
+                <img width="100%" src="" alt="">
+            </div>
+            <div class="music-player__pointer"><img width="100%" src="/img/cd_tou.png" alt=""></div>
+        </div>
+        <div class="music-player__controls">
+            <div class="music__info">
+                <h3 class="music__info--title">...</h3>
+                <p class="music__info--singer">...</p>
+            </div>
+            <div class="player-control">
+                <div class="player-control__content">
+                    <div class="player-control__btns">
+                        <div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div>
+                        <div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div>
+                        <div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div>
+                        <div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-loop"></i></div>
+                    </div>
+                    <div class="player-control__volume">
+                        <div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div>
+                        <div class="control__volume--progress player_progress"></div>
+                    </div>
+                </div>
+                <div class="player-control__content">
+                    <div class="player__song--progress player_progress"></div>
+                    <div class="player__song--timeProgess nowTime">00:00</div>
+                    <div class="player__song--timeProgess totalTime">00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/music-player/utill.js"></script>
+
+
+<script src="/js/music-player/jquery.min.js"></script>
+
+<!-- netease; qqkg -->
+<!--
+<script src="/js/music-player/player.js?library=config.music.library.js"></script>
+-->
+<script src="../../../../js/music-player/player.js?library=netease&music=https://kg.qq.com/node/play?s=7deFpz7Z26Jmv7di&g_f=share_html"></script>
+                
+                <!-- Music end -->
+
+                <!-- Sharing -->
+                
+                <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                <!--  css & js -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!-- Sharing -->
+
+                <!-- gitment start -->
+                
+                <!-- gitment end -->
+
+                <!-- 来必力City版安装代码 -->
+                
+                <!-- City版安装代码已完成 -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      
+        <aside id="sidebar">
+          <div id="toc" class="toc-article">
+          <strong class="toc-title">Contents</strong>
+          
+            
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#安装"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">安装</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#VMWare-windows版安装"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">VMWare windows版安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Linux镜像下载"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Linux镜像下载</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#Centos"><span class="toc-nav-number">1.2.0.0.1.</span> <span class="toc-nav-text">Centos</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#ubuntu"><span class="toc-nav-number">1.2.0.0.2.</span> <span class="toc-nav-text">ubuntu</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#指令"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">指令</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ls-list-列出文件和目录"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">ls(list)列出文件和目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cd-change-directory-切换目录"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">cd(change directory)切换目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#pwd-print-working-directory-显示当前目录"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">pwd(print working directory)显示当前目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#mkdir-make-directories-创建目录"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">mkdir(make directories)创建目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#rmdir-remove-directories-删除空目录"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">rmdir(remove directories)删除空目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#touch创建文件"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">touch创建文件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cp-copy-复制文件或目录"><span class="toc-nav-number">2.7.</span> <span class="toc-nav-text">cp(copy)复制文件或目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#mv-move-移动文件与目录"><span class="toc-nav-number">2.8.</span> <span class="toc-nav-text">mv(move)移动文件与目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#rm-remove-移除文件或目录"><span class="toc-nav-number">2.9.</span> <span class="toc-nav-text">rm(remove)移除文件或目录</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#vim-vim-一款文本编辑器"><span class="toc-nav-number">2.10.</span> <span class="toc-nav-text">vim(vim 一款文本编辑器)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#输出重定向"><span class="toc-nav-number">2.11.</span> <span class="toc-nav-text">输出重定向</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cat"><span class="toc-nav-number">2.12.</span> <span class="toc-nav-text">cat</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ln-link-files-为文件创建链接"><span class="toc-nav-number">2.13.</span> <span class="toc-nav-text">ln(link files)为文件创建链接</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#tar-gzip打包压缩与解压缩"><span class="toc-nav-number">2.14.</span> <span class="toc-nav-text">tar&#x2F;gzip打包压缩与解压缩</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#df-disk-full-列出磁盘空间的使用情况"><span class="toc-nav-number">2.15.</span> <span class="toc-nav-text">df(disk full)列出磁盘空间的使用情况</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#free查看内存使用情况"><span class="toc-nav-number">2.16.</span> <span class="toc-nav-text">free查看内存使用情况</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#head-n查看文件的前n行"><span class="toc-nav-number">2.17.</span> <span class="toc-nav-text">head -n查看文件的前n行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#tail"><span class="toc-nav-number">2.18.</span> <span class="toc-nav-text">tail</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#less以较少的内容进行输出"><span class="toc-nav-number">2.19.</span> <span class="toc-nav-text">less以较少的内容进行输出</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#wc统计文件按内容信息-行数、单词数、字节数"><span class="toc-nav-number">2.20.</span> <span class="toc-nav-text">wc统计文件按内容信息(行数、单词数、字节数)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#date操作-读取-、设置-时间和日期"><span class="toc-nav-number">2.21.</span> <span class="toc-nav-text">date操作(读取*、设置)时间和日期</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cal-calendar-操作日历"><span class="toc-nav-number">2.22.</span> <span class="toc-nav-text">cal(calendar)操作日历</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#clear-clear-screen-ctrl-L清屏"><span class="toc-nav-number">2.23.</span> <span class="toc-nav-text">clear(clear screen)&#x2F;ctrl+L清屏</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#管道"><span class="toc-nav-number">2.24.</span> <span class="toc-nav-text">管道|</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#hostname操作-读取-、设置-主机名"><span class="toc-nav-number">2.25.</span> <span class="toc-nav-text">hostname操作(读取*、设置)主机名</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#id显示用户的基本信息-用户id、用户组id、附加id"><span class="toc-nav-number">2.26.</span> <span class="toc-nav-text">id显示用户的基本信息(用户id、用户组id、附加id)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#whoami显示当前登录的用户名"><span class="toc-nav-number">2.27.</span> <span class="toc-nav-text">whoami显示当前登录的用户名</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#top动态显示服务器进程占用的资源，重点"><span class="toc-nav-number">2.28.</span> <span class="toc-nav-text">top动态显示服务器进程占用的资源，重点</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#du-disk-used-查看磁盘空间的使用量"><span class="toc-nav-number">2.29.</span> <span class="toc-nav-text">du(disk used)查看磁盘空间的使用量</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#find用于查找文件"><span class="toc-nav-number">2.30.</span> <span class="toc-nav-text">find用于查找文件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#service用于控制一些软件的服务启动-停止-重启，重点"><span class="toc-nav-number">2.31.</span> <span class="toc-nav-text">service用于控制一些软件的服务启动&#x2F;停止&#x2F;重启，重点</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#kill杀死进程"><span class="toc-nav-number">2.32.</span> <span class="toc-nav-text">kill杀死进程</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ifconfig操作网卡相关指令"><span class="toc-nav-number">2.33.</span> <span class="toc-nav-text">ifconfig操作网卡相关指令</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#reboot重新启动计算机"><span class="toc-nav-number">2.34.</span> <span class="toc-nav-text">reboot重新启动计算机</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#shutdown关机-公司慎用"><span class="toc-nav-number">2.35.</span> <span class="toc-nav-text">shutdown关机(公司慎用)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#uptime输出计算机的在线时间"><span class="toc-nav-number">2.36.</span> <span class="toc-nav-text">uptime输出计算机的在线时间</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#uname获取操作系统相关信息"><span class="toc-nav-number">2.37.</span> <span class="toc-nav-text">uname获取操作系统相关信息</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#netstat查看网络的连接信息"><span class="toc-nav-number">2.38.</span> <span class="toc-nav-text">netstat查看网络的连接信息</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#man-manual-手册"><span class="toc-nav-number">2.39.</span> <span class="toc-nav-text">man(manual)手册</span></a></li></ol></li></ol>
+            
+          
+          </div>
+        </aside>
+      
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+
+
+<style  type="text/css">
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/EQIV">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; caoyuqian 2022 
+                    <br>
+                    QQ
+                    <a href="">
+                        <i>2580811713</i>
+                    </a>
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- Search -->
+
+<script src="/js/search.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://EQIV.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Search -->
+
+    <script type="text/javascript">      
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+    var path = "/" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>
+
+
+<!-- busuanzi -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+
+    
+        <!-- background effects line -->
+        
+
+        
+            <script type="text/javascript" src="/js/mouse-click.js" content='[&quot;🌱&quot;,&quot;just do it&quot;,&quot;🍀&quot;]' color='[&quot;rgb(121,93,179)&quot; ,&quot;rgb(76,180,231)&quot; ,&quot;rgb(184,90,154)&quot;]'></script>
+        
+
+        <!-- background effects end -->
+    
+
+    <!--<script size="50" alpha='0.3' zIndex="-999" src="/js/ribbonStatic.js"></script>-->
+    
+        <script src="/js/ribbonDynamic.js"></script>
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

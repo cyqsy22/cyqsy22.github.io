@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          MySQL - doubley
+          MySQL - EQIV
         
     </title>
 
-    <link rel="canonical" href="https://thedoubley.github.io/2022/03/07/MySQL/">
+    <link rel="canonical" href="https://EQIV.github.io/2022/03/07/MySQL/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -90,7 +90,7 @@
     header.intro-header{
         
             
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../../img/default.jpg')
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../../img/mysql.png')
                 /*post*/
             
         
@@ -112,7 +112,7 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#-数据库 -数据库操作 -表操作" title="-数据库 -数据库操作 -表操作">-数据库 -数据库操作 -表操作</a>
+                              <a class="tag" href="/tags/#MYSQL" title="MYSQL">MYSQL</a>
                             
                         </div>
                         <h1>MySQL</h1>
@@ -125,7 +125,7 @@
                         
                             <div class="blank_box"></div>
                             <span class="meta">
-                                Words <span class="post-count">415</span> and
+                                Words <span class="post-count">48</span> and
                                 Reading Time <span class="post-count">1</span> Minutes
                             </span>
                             <div class="blank_box"></div>
@@ -164,7 +164,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">doubley</a>
+            <a class="navbar-brand" href="/">EQIV</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -187,14 +187,14 @@
 
                         
                         <li>
-                            <a href="/categories/">Categories</a>
+                            <a href="/photography/">Photography</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/photography/">Photography</a>
+                            <a href="/categories/">Categories</a>
                         </li>
                         
                     
@@ -206,10 +206,6 @@
                         
                     
                     
-                    
-                    <li>
-                        <a href="" target="_blank">Chinese Blog</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -260,25 +256,27 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p><code>ddl:date defination language 数据库定义语言</code></p>
-<h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATEBASE dbtest; &#x2F;&#x2F;创建数据库dbtest</span><br><span class="line">CREATE DATEBASE IF NOT EXISTS dbtest; &#x2F;&#x2F;如果数据库dbtest不存在则创建</span><br><span class="line">CREATE DATEBASE dbtest DEFUALT CHARSET utf8mb4; &#x2F;&#x2F;创建数据库dbtest并创建字符集utf8mb4</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATABASES; &#x2F;&#x2F;查询所有数据库</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USE dbtest; &#x2F;&#x2F;使用数据库dbtest</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATABASE(); &#x2F;&#x2F;查询当前数据库</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP DATEBASE dbtest; &#x2F;&#x2F;删除数据库dbtest</span><br><span class="line">DROP DATEBASE IF EXISTS dbtest; &#x2F;&#x2F;如果数据库dbtest存在则删除</span><br></pre></td></tr></table></figure>
-<h1 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h1><h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE tbla; &#x2F;&#x2F;创建表tbla</span><br><span class="line"></span><br><span class="line">CREATE TABLE tbla(</span><br><span class="line">id INT COMMENT &#39;编号&#39;, </span><br><span class="line">name VARCHAR(30)  COMMENT &#39;姓名&#39;</span><br><span class="line">) COMMENT &#39;用户表&#39;; </span><br><span class="line">&#x2F;&#x2F;创建表tbla；字段id，类型int，内容是编号，字段name，类型为vaechar，长度是30，内容是姓名；表内容是用户表</span><br></pre></td></tr></table></figure>
-<h3 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show tables; &#x2F;&#x2F;查看当前数据库的所有表</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESC tbla; &#x2F;&#x2F;查看表tbla结构</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE TABLE tbla; &#x2F;&#x2F;查看创建表tbla的语句</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla RENAME TO tblb；</span><br><span class="line">&#x2F;&#x2F;修改表名tbla为tblb</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla ADD id INT；</span><br><span class="line">ALTER TABLE tbla ADD id INT COMMENT &#39;编号&#39;；</span><br><span class="line">&#x2F;&#x2F;添加字段id，类型为int</span><br><span class="line">ALTER TABLE tbla</span><br><span class="line">ADD id INT,</span><br><span class="line">ADD gendar CHAR(1);</span><br><span class="line">&#x2F;&#x2F;添加多个字段</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla MODIFY id VARCHAR(10)；</span><br><span class="line">&#x2F;&#x2F;修改表中字段id的数据类型为VARCHAR(10)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR；&#x2F;</span><br><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR COMMENT &#39;学生姓名&#39;；</span><br><span class="line">&#x2F;&#x2F;修改字段名name为sname，数据类型为varchar</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla DROP id；</span><br><span class="line">&#x2F;&#x2F;删除字段id</span><br></pre></td></tr></table></figure>
-<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE tbla；&#x2F;&#x2F;删除表tbla</span><br><span class="line">DROP TABLE IF EXIST tbla；&#x2F;&#x2F;如果表存在则删除表tbla</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TRUNCATE TABLE tbla； &#x2F;&#x2F;清空表</span><br></pre></td></tr></table></figure>
+                <h1 id="Installing-Mysql-on-Windows"><a href="#Installing-Mysql-on-Windows" class="headerlink" title="Installing Mysql on Windows"></a>Installing Mysql on Windows</h1><p><a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a> 👆This is the link to the website</p>
+<p>Open the website, you can see this interface</p>
+<img src="/2022/03/07/MySQL/jm1.png" class="">
+<p>click “Download” like this</p>
+<img src="/2022/03/07/MySQL/jm2.png" class="">
+<p>and this’s what we want</p>
+<img src="/2022/03/07/MySQL/jm3.png" class="">
+<img src="/2022/03/07/MySQL/jm4.png" class="">
+<img src="/2022/03/07/MySQL/jm5.png" class="">
+<p>Then, start your download!</p>
+<h1 id="the-select-statement"><a href="#the-select-statement" class="headerlink" title="the select statement"></a>the select statement</h1><p>select * from employers</p>
+<p>”*“</p>
+<h1 id="the-IN-operator"><a href="#the-IN-operator" class="headerlink" title="the IN operator"></a>the IN operator</h1><p>two examples:</p>
+<p>1.</p>
+<img src="/2022/03/07/MySQL/in21.png" class="">
+<p>Equivalent to</p>
+<img src="/2022/03/07/MySQL/in22.png" class="">
+<p>2.</p>
+<img src="/2022/03/07/MySQL/in1.png" class="">
+<p>Equivalent to</p>
+<img src="/2022/03/07/MySQL/in2.png" class="">
 
                 
                 <hr>
@@ -286,12 +284,12 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2022/03/13/文件与目录管理/" data-toggle="tooltip" data-placement="top" title="文件与目录管理">&larr; Previous Post</a>
+                        <a href="/2022/03/07/DDL/" data-toggle="tooltip" data-placement="top" title="MySQL">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2022/03/07/DDL/" data-toggle="tooltip" data-placement="top" title="MySQL">Next Post &rarr;</a>
+                        <a href="/2022/03/06/vim/" data-toggle="tooltip" data-placement="top" title="vim">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -404,7 +402,7 @@
           <strong class="toc-title">Contents</strong>
           
             
-              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#数据库操作"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">数据库操作</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#表操作"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">表操作</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建表"><span class="toc-nav-number">2.0.1.</span> <span class="toc-nav-text">创建表</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查看表"><span class="toc-nav-number">2.0.2.</span> <span class="toc-nav-text">查看表</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#修改表"><span class="toc-nav-number">2.0.3.</span> <span class="toc-nav-text">修改表</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除表"><span class="toc-nav-number">2.0.4.</span> <span class="toc-nav-text">删除表</span></a></li></ol></li></ol></li></ol>
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Installing-Mysql-on-Windows"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Installing Mysql on Windows</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#the-select-statement"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">the select statement</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#the-IN-operator"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">the IN operator</span></a></li></ol>
             
           
           </div>
@@ -426,7 +424,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#-数据库 -数据库操作 -表操作" title="-数据库 -数据库操作 -表操作">-数据库 -数据库操作 -表操作</a>
+                          <a class="tag" href="/tags/#MYSQL" title="MYSQL">MYSQL</a>
                         
                     </div>
                 </section>
@@ -490,7 +488,7 @@
 
                 
                     <li>
-                        <a target="_blank"  href="https://github.com/thedoubley">
+                        <a target="_blank"  href="https://github.com/EQIV">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -564,7 +562,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("https://thedoubley.github.io/js/jquery.tagcloud.js",function(){
+        async("https://EQIV.github.io/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
