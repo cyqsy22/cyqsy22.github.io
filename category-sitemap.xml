@@ -9,7 +9,14 @@
 
     <url>
         <loc>https://eqiv.github.io/categories/MYSQL/</loc>
-        <lastmod>2022-05-01T03:41:48.081Z</lastmod>
+        <lastmod>2022-05-01T05:50:20.116Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://eqiv.github.io/categories/Linux/</loc>
+        <lastmod>2022-05-01T04:31:52.553Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -29,20 +36,6 @@
     </url>
 
     <url>
-        <loc>https://eqiv.github.io/categories/Linux/</loc>
-        <lastmod>2022-04-25T11:36:08.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://eqiv.github.io/categories/%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593/</loc>
-        <lastmod>2022-04-25T11:27:30.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://eqiv.github.io/categories/Visual-Studio-Code/</loc>
         <lastmod>2022-04-25T04:32:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -52,13 +45,6 @@
     <url>
         <loc>https://eqiv.github.io/categories/%25E7%25BB%258F%25E9%25AA%258C/</loc>
         <lastmod>2022-04-11T12:49:10.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://eqiv.github.io/categories/MySQL%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593/</loc>
-        <lastmod>2022-03-05T06:47:48.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

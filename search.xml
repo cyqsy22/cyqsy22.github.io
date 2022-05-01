@@ -128,31 +128,6 @@
     
     
     <entry>
-      <title>DML</title>
-      <link href="/2022/03/17/DML/"/>
-      <url>/2022/03/17/DML/</url>
-      
-        <content type="html"><![CDATA[<h3 id="DML-Data-Manipulation-Language-数据库操作语言"><a href="#DML-Data-Manipulation-Language-数据库操作语言" class="headerlink" title="`DML:Data Manipulation Language 数据库操作语言"></a>`DML:Data Manipulation Language 数据库操作语言</h3><h1 id="插入-INSERT"><a href="#插入-INSERT" class="headerlink" title="插入(INSERT)"></a>插入(INSERT)</h1><p><code>添加数据</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO tbla(id,name) VALUES(1,&#39;张三&#39;);</span><br><span class="line">&#x2F;&#x2F;给表中指定字段id，name添加数据</span><br><span class="line">INSERT INTO tbla(id,name) VALUES(1,&#39;张三&#39;)(2,&#39;李四&#39;)(3，&#39;王二&#39;);</span><br><span class="line">&#x2F;&#x2F;给表中指定字段id，name批量添加数据</span><br><span class="line">INSERT INTO tbla VALUES(1,&#39;张三&#39;，....);</span><br><span class="line">&#x2F;&#x2F;给表中全部字段添加数据</span><br><span class="line">INSERT INTO tbla VALUES(1,&#39;张三&#39;,...)(2,&#39;李四&#39;,...)(3，&#39;王二&#39;,...);</span><br><span class="line">&#x2F;&#x2F;给表中全部字段批量添加数据</span><br><span class="line">字符串和日期类型要加单引号</span><br></pre></td></tr></table></figure><h1 id="更新-UPDATE"><a href="#更新-UPDATE" class="headerlink" title="更新(UPDATE)"></a>更新(UPDATE)</h1><h1 id="删除-DELETE"><a href="#删除-DELETE" class="headerlink" title="删除(DELETE)"></a>删除(DELETE)</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -数据库 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>文件与目录管理</title>
       <link href="/2022/03/13/%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/"/>
       <url>/2022/03/13/%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/</url>
@@ -167,35 +142,10 @@
     
     <entry>
       <title>MySQL</title>
-      <link href="/2022/03/07/DDL/"/>
-      <url>/2022/03/07/DDL/</url>
-      
-        <content type="html"><![CDATA[<p><code>ddl:date defination language 数据库定义语言</code></p><h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATEBASE dbtest; &#x2F;&#x2F;创建数据库dbtest</span><br><span class="line">CREATE DATEBASE IF NOT EXISTS dbtest; &#x2F;&#x2F;如果数据库dbtest不存在则创建</span><br><span class="line">CREATE DATEBASE dbtest DEFUALT CHARSET utf8mb4; &#x2F;&#x2F;创建数据库dbtest并创建字符集utf8mb4</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATABASES; &#x2F;&#x2F;查询所有数据库</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USE dbtest; &#x2F;&#x2F;使用数据库dbtest</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATABASE(); &#x2F;&#x2F;查询当前数据库</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP DATEBASE dbtest; &#x2F;&#x2F;删除数据库dbtest</span><br><span class="line">DROP DATEBASE IF EXISTS dbtest; &#x2F;&#x2F;如果数据库dbtest存在则删除</span><br></pre></td></tr></table></figure><h1 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h1><h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE tbla; &#x2F;&#x2F;创建表tbla</span><br><span class="line"></span><br><span class="line">CREATE TABLE tbla(</span><br><span class="line">id INT COMMENT &#39;编号&#39;, </span><br><span class="line">name VARCHAR(30)  COMMENT &#39;姓名&#39;</span><br><span class="line">) COMMENT &#39;用户表&#39;; </span><br><span class="line">&#x2F;&#x2F;创建表tbla；字段id，类型int，内容是编号，字段name，类型为vaechar，长度是30，内容是姓名；表内容是用户表</span><br></pre></td></tr></table></figure><h3 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show tables; &#x2F;&#x2F;查看当前数据库的所有表</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESC tbla; &#x2F;&#x2F;查看表tbla结构</span><br></pre></td></tr></table></figure><img src="/2022/03/07/DDL/2.png" class=""><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE TABLE tbla; &#x2F;&#x2F;查看创建表tbla的语句</span><br></pre></td></tr></table></figure><img src="/2022/03/07/DDL/3.png" class=""><h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla RENAME TO tblb；</span><br><span class="line">&#x2F;&#x2F;修改表名tbla为tblb</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla ADD id INT；</span><br><span class="line">ALTER TABLE tbla ADD id INT COMMENT &#39;编号&#39;；</span><br><span class="line">&#x2F;&#x2F;添加字段id，类型为int</span><br><span class="line">ALTER TABLE tbla</span><br><span class="line">ADD id INT,</span><br><span class="line">ADD gendar CHAR(1);</span><br><span class="line">&#x2F;&#x2F;添加多个字段</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla MODIFY id VARCHAR(10)；</span><br><span class="line">&#x2F;&#x2F;修改表中字段id的数据类型为VARCHAR(10)</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR；&#x2F;</span><br><span class="line">ALTER TABLE tbla CHANGE name sname VARCHAR COMMENT &#39;学生姓名&#39;；</span><br><span class="line">&#x2F;&#x2F;修改字段名name为sname，数据类型为varchar</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tbla DROP id；</span><br><span class="line">&#x2F;&#x2F;删除字段id</span><br></pre></td></tr></table></figure><h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE tbla；&#x2F;&#x2F;删除表tbla</span><br><span class="line">DROP TABLE IF EXIST tbla；&#x2F;&#x2F;如果表存在则删除表tbla</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TRUNCATE TABLE tbla； &#x2F;&#x2F;清空表</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -数据库 -数据库操作 -表操作 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MySQL</title>
       <link href="/2022/03/07/MySQL/"/>
       <url>/2022/03/07/MySQL/</url>
       
-        <content type="html"><![CDATA[<h1 id="Installing-Mysql-on-Windows"><a href="#Installing-Mysql-on-Windows" class="headerlink" title="Installing Mysql on Windows"></a>Installing Mysql on Windows</h1><p><a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a> 👆This is the link to the website</p><p>Open the website, you can see this interface</p><img src="/2022/03/07/MySQL/jm1.png" class=""><p>click “Download” like this</p><img src="/2022/03/07/MySQL/jm2.png" class=""><p>and this’s what we want</p><img src="/2022/03/07/MySQL/jm3.png" class=""><img src="/2022/03/07/MySQL/jm4.png" class=""><img src="/2022/03/07/MySQL/jm5.png" class=""><p>Then, start your download!</p><h1 id="the-select-statement"><a href="#the-select-statement" class="headerlink" title="the select statement"></a>the select statement</h1><p>select * from employers</p><p>”*“</p><h1 id="the-IN-operator"><a href="#the-IN-operator" class="headerlink" title="the IN operator"></a>the IN operator</h1><p>two examples:</p><p>1.</p><img src="/2022/03/07/MySQL/in21.png" class=""><p>Equivalent to</p><img src="/2022/03/07/MySQL/in22.png" class=""><p>2.</p><img src="/2022/03/07/MySQL/in1.png" class=""><p>Equivalent to</p><img src="/2022/03/07/MySQL/in2.png" class="">]]></content>
+        <content type="html"><![CDATA[<h1 id="Installing-Mysql-on-Windows"><a href="#Installing-Mysql-on-Windows" class="headerlink" title="Installing Mysql on Windows"></a>Installing Mysql on Windows</h1><p><a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a> 👆This is the link to the website</p><p>Open the website, you can see this interface</p><img src="/2022/03/07/MySQL/jm1.png" class=""><p>click “Download” like this</p><img src="/2022/03/07/MySQL/jm2.png" class=""><p>and this’s what we want</p><img src="/2022/03/07/MySQL/jm3.png" class=""><img src="/2022/03/07/MySQL/jm4.png" class=""><img src="/2022/03/07/MySQL/jm5.png" class=""><p>Then, start your download!</p><p>and If your computer does not have Microsoft Visual C++ Redistributable</p><p>you need to install it 👆<a href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="_blank" rel="noopener">Microsoft Visual C++ Redistributable</a></p><h1 id="the-select-statement"><a href="#the-select-statement" class="headerlink" title="the select statement"></a>the select statement</h1><p>two examples:</p><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><img src="/2022/03/07/MySQL/s1.png" class=""><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><img src="/2022/03/07/MySQL/s2.png" class=""><h1 id="the-IN-operator"><a href="#the-IN-operator" class="headerlink" title="the IN operator"></a>the IN operator</h1><p>two examples:</p><h2 id="1-1"><a href="#1-1" class="headerlink" title="1."></a>1.</h2><img src="/2022/03/07/MySQL/in21.png" class=""><p>Equivalent to</p><img src="/2022/03/07/MySQL/in22.png" class=""><h2 id="2-1"><a href="#2-1" class="headerlink" title="2."></a>2.</h2><img src="/2022/03/07/MySQL/in1.png" class=""><p>Equivalent to</p><img src="/2022/03/07/MySQL/in2.png" class=""><h1 id="the-between-operator"><a href="#the-between-operator" class="headerlink" title="the between operator"></a>the between operator</h1><p>two examples:</p><h2 id="1-2"><a href="#1-2" class="headerlink" title="1."></a>1.</h2><img src="/2022/03/07/MySQL/bt1.png" class=""><p>Equivalent to</p><img src="/2022/03/07/MySQL/bt2.png" class=""><h2 id="2-2"><a href="#2-2" class="headerlink" title="2."></a>2.</h2><img src="/2022/03/07/MySQL/bt21.png" class=""><p>Equivalent to</p><img src="/2022/03/07/MySQL/bt22.png" class=""><h1 id="the-LIKE-operator"><a href="#the-LIKE-operator" class="headerlink" title="the LIKE operator"></a>the LIKE operator</h1><h2 id="1-3"><a href="#1-3" class="headerlink" title="1."></a>1.</h2><p>% any number of characters</p><p>_ single number of character</p><p>①<img src="/2022/03/07/MySQL/l11.png" class=""></p><p>②<img src="/2022/03/07/MySQL/l12.png" class=""></p><p>③<img src="/2022/03/07/MySQL/l13.png" class=""></p><p>④<img src="/2022/03/07/MySQL/l14.png" class=""></p><p>⑤<img src="/2022/03/07/MySQL/l21.png" class=""></p><p>⑥<img src="/2022/03/07/MySQL/l22.png" class=""></p><h2 id="2-3"><a href="#2-3" class="headerlink" title="2."></a>2.</h2><img src="/2022/03/07/MySQL/l3.png" class=""><h1 id="the-REGEXP-operator—regular-expressions"><a href="#the-REGEXP-operator—regular-expressions" class="headerlink" title="the REGEXP operator—regular expressions"></a>the REGEXP operator—regular expressions</h1><p>Here you can use regular expressions</p><p>Here are four examples</p><img src="/2022/03/07/MySQL/e.png" class=""><h2 id="1-4"><a href="#1-4" class="headerlink" title="1."></a>1.</h2><img src="/2022/03/07/MySQL/r1.png" class=""><h2 id="2-4"><a href="#2-4" class="headerlink" title="2."></a>2.</h2><img src="/2022/03/07/MySQL/r2.png" class=""><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><img src="/2022/03/07/MySQL/r3.png" class=""><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><img src="/2022/03/07/MySQL/r4.png" class=""><h1 id="the-IS-NULL-operator"><a href="#the-IS-NULL-operator" class="headerlink" title="the IS NULL operator"></a>the IS NULL operator</h1><h2 id="1-5"><a href="#1-5" class="headerlink" title="1."></a>1.</h2><img src="/2022/03/07/MySQL/n1.png" class=""><img src="/2022/03/07/MySQL/n2.png" class=""><h2 id="2-5"><a href="#2-5" class="headerlink" title="2."></a>2.</h2><img src="/2022/03/07/MySQL/n3.png" class="">]]></content>
       
       
       <categories>
@@ -208,31 +158,6 @@
         <tags>
             
             <tag> MYSQL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>vim</title>
-      <link href="/2022/03/06/vim/"/>
-      <url>/2022/03/06/vim/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
             
         </tags>
       
@@ -310,33 +235,6 @@
             <tag> AutoCAD </tag>
             
             <tag> 安装 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MySQL安装</title>
-      <link href="/2022/02/28/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85/"/>
-      <url>/2022/02/28/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85/</url>
-      
-        <content type="html"><![CDATA[<h1 id="MySQL下载"><a href="#MySQL下载" class="headerlink" title="MySQL下载"></a>MySQL下载</h1><p><a href="https://dev.mysql.com/downloads/installer/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/installer/</a></p><h1 id="Microsoft-Visual-C-Redistributable2019"><a href="#Microsoft-Visual-C-Redistributable2019" class="headerlink" title="Microsoft Visual C++ Redistributable2019"></a>Microsoft Visual C++ Redistributable2019</h1><p><a href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="_blank" rel="noopener">https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> MySQL数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安装 </tag>
-            
-            <tag> MySQL </tag>
             
         </tags>
       
